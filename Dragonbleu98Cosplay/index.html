@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image" href="/Dragonbleu98Cosplay/src/img/logo2.2.png" />
+    <link rel="icon" type="image/png" href="/Dragonbleu98Cosplay/src/img/logo2.2.png" />
     <link rel="canonical" href="https://dragonbleu98cosplay.vercel.app/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="DragonBleu98, cosplayeuse passionnée. Découvrez ses créations, suivies sur Instagram, TikTok, et plus encore !" />
@@ -12,85 +12,58 @@
     <link href="src/index.css" rel="stylesheet" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="DragonBleu98 - Cosplayeuse Passionnée | Créations et Univers Geek">
-    <meta property="og:description" content="Suivez DragonBleu98 pour découvrir ses cosplay, créations et son univers geek. Retrouvez-la sur Instagram, TikTok, et plus !">
-    <meta property="og:url" content="https://dragonbleu98cosplay.vercel.app/">
-    <meta property="og:type" content="website">
+    <meta property="og:title" content="DragonBleu98 - Cosplayeuse Passionnée | Créations et Univers Geek" />
+    <meta property="og:description" content="Suivez DragonBleu98 pour découvrir ses cosplay, créations et son univers geek. Retrouvez-la sur Instagram, TikTok, et plus !" />
+    <meta property="og:url" content="https://dragonbleu98cosplay.vercel.app/" />
+    <meta property="og:type" content="website" />
   </head>
+
   <body class="bg-blue-100 font-sans flex flex-col items-center justify-center min-h-screen">
-     <script>
-        //Facebook
-        document.addEventListener("DOMContentLoaded", function () {
-            const urlfb = "https://www.facebook.com/share/1AACPAN1oc/"; // URL Facebook
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = {
+          tiktok: "https://www.tiktok.com/@dragonbleu98",
+          instagram: "https://www.instagram.com/dragonbleu98/",
+          facebook: "https://www.facebook.com/share/1AACPAN1oc/",
+          Thead: "https://www.threads.net/@dragonbleu98",
+          youtube: "https://www.youtube.com/@DragonBleu98"
+        };
 
-            
-                document.getElementById("facebook").addEventListener("click", function () {
-                window.open(urlfb, "_blank"); // Ouvre l'URL dans un nouvel onglet
+        for (const id in links) {
+          const el = document.getElementById(id);
+          if (el) {
+            el.addEventListener("click", () => {
+              window.open(links[id], "_blank");
             });
-            });
-        
-        //intagramm
-        document.addEventListener("DOMContentLoaded", function () {
-            const urlinsta = "https://www.instagram.com/dragonbleu98/"; // URL inta
-
-            
-                document.getElementById("instagram").addEventListener("click", function () {
-                window.open(urlinsta, "_blank"); // Ouvre l'URL dans un nouvel onglet
-            });
-            });
-             //thear
-        document.addEventListener("DOMContentLoaded", function () {
-            const urlThead = "https://www.threads.net/@dragonbleu98"; // URL theard
-            
-                document.getElementById("Thead").addEventListener("click", function () {
-                window.open(urlThead, "_blank"); // Ouvre l'URL dans un nouvel onglet
-            });
-            });
-            
-            //tictock
-            document.addEventListener("DOMContentLoaded", function () {
-            const urlTickToc = "https://www.tiktok.com/@dragonbleu98"; // URL TickToc
-
-            
-                document.getElementById("tiktok").addEventListener("click", function () {
-                window.open(urlTickToc, "_blank"); // Ouvre l'URL dans un nouvel onglet
-            });
-             //Facebook
-        document.addEventListener("DOMContentLoaded", function () {
-            const urlfb = "https://www.youtube.com/@DragonBleu98"; // URL youtube
-
-            
-                document.getElementById("youtube").addEventListener("click", function () {
-                window.open(urlfb, "_blank"); // Ouvre l'URL dans un nouvel onglet
-            });
-            });
-        
-            });
-
-
-            
+          }
+        }
+      });
     </script>
 
+    <main class="relative w-full md:w-1/2 bg-gray-300 rounded-full pt-4 pb-4 px-6 text-center shadow-xl animate-fade-in">
+      <section aria-labelledby="titre">
+        <h1 id="titre" class="text-2xl font-bold mb-4">DragonBleu98 Cosplay</h1>
 
-    <div class="relative w-full md:w-1/2 bg-gray-300 rounded-full pt-4 pb-4 px-6 text-center shadow-xl animate-fade-in">
-        <h1>DragonBleu98 Cosplay</h1>
-        <!-- Logo  -->
-        <div class="mb-[4px] flex justify-center">
-            <!-- <img src="src/img/logo2.png" alt="Logo" class="w-[550px] block rounded-full"> -->
-            <img src="src/img/DragonBleu98-logoV2.png" alt="Logo" class="w-[200px] block rounded-full">
+        <!-- Logo -->
+        <div class="mb-4 flex justify-center">
+          <img src="src/img/DragonBleu98-logoV2.png" alt="Logo de DragonBleu98, cosplayeuse" class="w-[200px] block rounded-full" />
         </div>
 
-            <!-- Boutons réseaux -->
+        <!-- Boutons réseaux -->
         <div class="flex flex-col items-center space-y-4">
-  <button id="tiktok" class="w-1/2 bg-black text-white py-3 rounded-lg font-semibold hover:opacity-80 hover:-translate-y-1 transition transform duration-200">TikTok</button>
-  <button id="instagram" class="w-1/2 bg-black text-white py-3 rounded-lg font-semibold hover:opacity-80 hover:-translate-y-1 transition transform duration-200">Instagram</button>
-  <button id="facebook" class="w-1/2 bg-black text-white py-3 rounded-lg font-semibold hover:opacity-80 hover:-translate-y-1 transition transform duration-200">Facebook</button>
-  <button id="Thead" class="w-1/2 bg-black text-white py-3 rounded-lg font-semibold hover:opacity-80 hover:-translate-y-1 transition transform duration-200">Thead</button>
-  <button id="youtube" class="w-1/2 bg-black text-white py-3 rounded-lg font-semibold hover:opacity-80 hover:-translate-y-1 transition transform duration-200">YouTube</button>
-</div>
+          <button id="tiktok" aria-label="Lien vers TikTok de DragonBleu98" class="w-1/2 bg-black text-white py-3 rounded-lg font-semibold hover:opacity-80 hover:-translate-y-1 transition transform duration-200 focus:outline-none focus:ring-2 focus:ring-pink-500">TikTok</button>
 
+          <button id="instagram" aria-label="Lien vers Instagram de DragonBleu98" class="w-1/2 bg-black text-white py-3 rounded-lg font-semibold hover:opacity-80 hover:-translate-y-1 transition transform duration-200 focus:outline-none focus:ring-2 focus:ring-pink-500">Instagram</button>
 
-    </div>
+          <button id="facebook" aria-label="Lien vers Facebook de DragonBleu98" class="w-1/2 bg-black text-white py-3 rounded-lg font-semibold hover:opacity-80 hover:-translate-y-1 transition transform duration-200 focus:outline-none focus:ring-2 focus:ring-pink-500">Facebook</button>
+
+          <button id="Thead" aria-label="Lien vers Threads de DragonBleu98" class="w-1/2 bg-black text-white py-3 rounded-lg font-semibold hover:opacity-80 hover:-translate-y-1 transition transform duration-200 focus:outline-none focus:ring-2 focus:ring-pink-500">Threads</button>
+
+          <button id="youtube" aria-label="Lien vers YouTube de DragonBleu98" class="w-1/2 bg-black text-white py-3 rounded-lg font-semibold hover:opacity-80 hover:-translate-y-1 transition transform duration-200 focus:outline-none focus:ring-2 focus:ring-pink-500">YouTube</button>
+        </div>
+      </section>
+    </main>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
