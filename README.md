@@ -10,7 +10,7 @@ Ce projet est l'application web de la cosplayeusse DragonBleu98
 
 ## Structure du projet
 
-- `public/` : fichiers statiques accessibles publiquement (ex : `vite.svg`)
+- `public/` : fichietatiques accessibles publiquement (ex : `vite.svg`)
 - `src/` : code source
   - `assets/` : ressources (images, polices, etc.)
   - `components/` : composants Vue
