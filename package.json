@@ -1,0 +1,20 @@
+{
+  "name": "dragonbleu98cos",
+  "version": "1.0.0",
+  "description": "Projet frontend développé avec **Vite**, **Vue.js** et **TailwindCSS**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Druart-Stacy/dragonbleu98cos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Druart-Stacy/dragonbleu98cos/issues"
+  },
+  "homepage": "https://github.com/Druart-Stacy/dragonbleu98cos#readme"
+}
