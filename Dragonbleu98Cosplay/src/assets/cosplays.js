@@ -29,3 +29,4 @@ export const cosplays = [
     ]
   }
 ];
+export default cosplays; 
