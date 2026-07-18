@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/Dragonbleu98Cosplay/src/img/logo2.2.png" />
-    <link rel="canonical" href="https://dragonbleu98cosplay.vercel.app/" />
+    <link rel="canonical" href="https://vercel.app" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="DragonBleu98, cosplayeuse passionnée. Découvrez ses créations, suivies sur Instagram, TikTok, et plus encore !" />
     <meta name="keywords" content="Cosplay, cosplayeuse, DragonBleu98, créations, Instagram, TikTok, cosplay artistique" />
@@ -14,34 +14,11 @@
     <!-- Open Graph -->
     <meta property="og:title" content="DragonBleu98 - Cosplayeuse Passionnée | Créations et Univers Geek" />
     <meta property="og:description" content="Suivez DragonBleu98 pour découvrir ses cosplay, créations et son univers geek. Retrouvez-la sur Instagram, TikTok, et plus !" />
-    <meta property="og:url" content="https://dragonbleu98cosplay.vercel.app/" />
+    <meta property="og:url" content="https://vercel.app" />
     <meta property="og:type" content="website" />
   </head>
 
   <body class="bg-blue-100 font-sans flex flex-col items-center justify-center min-h-screen">
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const links = {
-          tiktok: "https://www.tiktok.com/@dragonbleu98",
-          instagram: "https://www.instagram.com/dragonbleu98/",
-          facebook: "https://www.facebook.com/share/1AACPAN1oc/",
-          Thead: "https://www.threads.net/@dragonbleu98",
-          youtube: "https://www.youtube.com/@DragonBleu98",
-          site:"galery.html",
-          sitevideos:"videos.html"
-          
-        };
-
-        for (const id in links) {
-          const el = document.getElementById(id);
-          if (el) {
-            el.addEventListener("click", () => {
-              window.open(links[id], "_blank");
-            });
-          }
-        }
-      });
-    </script>
 
     <main class="relative w-full md:w-1/2 bg-gray-300 rounded-full pt-4 pb-4 px-6 text-center shadow-xl animate-fade-in">
       <section aria-labelledby="titre">
@@ -52,20 +29,36 @@
           <img src="src/img/DragonBleu98-logoV2.png" alt="Logo de DragonBleu98, cosplayeuse" class="w-[200px] block rounded-full" />
         </div>
 
-        <!-- Boutons réseaux -->
+        <!-- Liens réseaux et pages internes avec le nouveau bleu foncé -->
         <div class="flex flex-col items-center space-y-4">
-          <button id="tiktok" aria-label="Lien vers TikTok de DragonBleu98" class="w-1/2 bg-black text-white py-3 rounded-lg font-semibold hover:opacity-80 hover:-translate-y-1 transition transform duration-200 focus:outline-none focus:ring-2 focus:ring-pink-500">TikTok</button>
+          
+          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="Lien vers TikTok de DragonBleu98" class="w-1/2 bg-blue-800 border-2 border-blue-950 text-white py-3 rounded-xl font-semibold hover:bg-blue-700 hover:-translate-y-1 transition transform duration-200 focus:outline-none focus:ring-2 focus:ring-pink-500 flex items-center justify-center">
+            TikTok
+          </a>
 
-          <button id="instagram" aria-label="Lien vers Instagram de DragonBleu98" class="w-1/2 bg-black text-white py-3 rounded-lg font-semibold hover:opacity-80 hover:-translate-y-1 transition transform duration-200 focus:outline-none focus:ring-2 focus:ring-pink-500">Instagram</button>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Lien vers Instagram de DragonBleu98" class="w-1/2 bg-blue-800 border-2 border-blue-950 text-white py-3 rounded-xl font-semibold hover:bg-blue-700 hover:-translate-y-1 transition transform duration-200 focus:outline-none focus:ring-2 focus:ring-pink-500 flex items-center justify-center">
+            Instagram
+          </a>
 
-          <button id="facebook" aria-label="Lien vers Facebook de DragonBleu98" class="w-1/2 bg-black text-white py-3 rounded-lg font-semibold hover:opacity-80 hover:-translate-y-1 transition transform duration-200 focus:outline-none focus:ring-2 focus:ring-pink-500">Facebook</button>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Lien vers Facebook de DragonBleu98" class="w-1/2 bg-blue-800 border-2 border-blue-950 text-white py-3 rounded-xl font-semibold hover:bg-blue-700 hover:-translate-y-1 transition transform duration-200 focus:outline-none focus:ring-2 focus:ring-pink-500 flex items-center justify-center">
+            Facebook
+          </a>
 
-          <button id="Thead" aria-label="Lien vers Threads de DragonBleu98" class="w-1/2 bg-black text-white py-3 rounded-lg font-semibold hover:opacity-80 hover:-translate-y-1 transition transform duration-200 focus:outline-none focus:ring-2 focus:ring-pink-500">Threads</button>
+          <a href="https://threads.net" target="_blank" rel="noopener noreferrer" aria-label="Lien vers Threads de DragonBleu98" class="w-1/2 bg-blue-800 border-2 border-blue-950 text-white py-3 rounded-xl font-semibold hover:bg-blue-700 hover:-translate-y-1 transition transform duration-200 focus:outline-none focus:ring-2 focus:ring-pink-500 flex items-center justify-center">
+            Threads
+          </a>
 
-          <button id="youtube" aria-label="Lien vers YouTube de DragonBleu98" class="w-1/2 bg-black text-white py-3 rounded-lg font-semibold hover:opacity-80 hover:-translate-y-1 transition transform duration-200 focus:outline-none focus:ring-2 focus:ring-pink-500">YouTube</button>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Lien vers YouTube de DragonBleu98" class="w-1/2 bg-blue-800 border-2 border-blue-950 text-white py-3 rounded-xl font-semibold hover:bg-blue-700 hover:-translate-y-1 transition transform duration-200 focus:outline-none focus:ring-2 focus:ring-pink-500 flex items-center justify-center">
+            YouTube
+          </a>
 
-         <button id="site" aria-label="Lien vers le site photos de DragonBleu98" class="w-1/2 bg-black text-white py-3 rounded-lg font-semibold hover:opacity-80 hover:-translate-y-1 transition transform duration-200 focus:outline-none focus:ring-2 focus:ring-pink-500">Site photos</button>
-        <button id="sitevideos" aria-label="Lien vers le site video de DragonBleu98" class="w-1/2 bg-black text-white py-3 rounded-lg font-semibold hover:opacity-80 hover:-translate-y-1 transition transform duration-200 focus:outline-none focus:ring-2 focus:ring-pink-500">Site vidéo</button>
+          <!--<a href="galery.html" aria-label="Lien vers le site photos de DragonBleu98" class="w-1/2 bg-blue-800 border-2 border-blue-950 text-white py-3 rounded-xl font-semibold hover:bg-blue-700 hover:-translate-y-1 transition transform duration-200 focus:outline-none focus:ring-2 focus:ring-pink-500 flex items-center justify-center">
+            Site photos
+          </a>
+          
+          <a href="videos.html" aria-label="Lien vers le site video de DragonBleu98" class="w-1/2 bg-blue-800 border-2 border-blue-950 text-white py-3 rounded-xl font-semibold hover:bg-blue-700 hover:-translate-y-1 transition transform duration-200 focus:outline-none focus:ring-2 focus:ring-pink-500 flex items-center justify-center">
+            Site vidéo
+          </a> -->
         </div>
       </section>
     </main>
