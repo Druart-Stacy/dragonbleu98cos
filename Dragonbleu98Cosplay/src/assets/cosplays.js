@@ -1,4 +1,5 @@
-const cosplays = [
+// Ajoutez "export" juste ici au début de la ligne :
+export const cosplays = [
   {
     id: "james",
     nom: "James",
@@ -14,7 +15,6 @@ const cosplays = [
       "Winter Geek Festival"
     ]
   },
-
   {
     id: "arale",
     nom: "arale",
@@ -28,5 +28,4 @@ const cosplays = [
       "Japan Day"
     ]
   }
-  
 ];
