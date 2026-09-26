@@ -19,7 +19,7 @@
                class="absolute top-4 left-6 bg-blue-800 border border-blue-950 text-white px-4 py-1.5 rounded-lg text-sm font-semibold hover:bg-blue-700 transition">
                 ← Retour
             </a>
-
+            
             <h1 class="text-2xl font-bold mb-4 mt-6 md:mt-0">
                 Photos des conventions
             </h1>
@@ -28,11 +28,36 @@
                  alt="Logo DragonBleu98 Cosplay"
                  class="w-[200px] mx-auto rounded-full">
         </div>
+        <script>
+  // On sélectionne la barre de recherche
+  const inputRecherche = document.getElementById('barreRecherche');
+  
+  // On récupère TOUTES les images de la galerie d'un coup
+  const toutesLesImages = document.querySelectorAll('.galerie img');
+
+  // On écoute ce que l'utilisateur tape dans la barre
+  inputRecherche.addEventListener('input', (evenement) => {
+    const texteSaisi = evenement.target.value.toLowerCase();
+
+    // On parcourt chaque image présente dans le HTML
+    toutesLesImages.forEach(image => {
+      const idImage = image.id.toLowerCase();
+
+      // Si l'ID de l'image contient le texte tapé, on l'affiche, sinon on la cache
+      if (idImage.includes(texteSaisi)) {
+        image.style.display = 'inline-block'; // Réaffiche l'image
+      } else {
+        image.style.display = 'none'; // Cache l'image
+      }
+    });
+  });
+</script>
     </header>
 
     <!-- Galerie Générale -->
     <main class="max-w-5xl mx-auto px-4">
-
+        <!-- <input type="text" id="barreRecherche" placeholder="Rechercher une image par ID..."> -->
+        
         <!-- ANNÉE 2021 -->
         <section class="mb-12">
 
@@ -711,6 +736,7 @@
         </section>
 
     </main>
+    
 
     <script type="module" src="/src/galery.js"></script>
 
