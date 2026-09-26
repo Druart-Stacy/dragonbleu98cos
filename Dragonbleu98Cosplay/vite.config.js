@@ -8,6 +8,7 @@ rollupOptions: {
 input: {
 main: resolve(__dirname, 'index.html'),
 galery: resolve(__dirname, 'galery.html'),
+mention: resolve(__dirname, 'mention.html'),
 },
 },
 },
