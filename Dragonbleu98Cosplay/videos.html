@@ -5,8 +5,7 @@
     <link rel="icon" type="image/png" href="/Dragonbleu98Cosplay/src/img/logo2.2.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Galerie photos des conventions cosplay de DragonBleu98." />
-    <title>DragonBleu98 - Vidéo Conventions</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>DragonBleu98 - Galerie Conventions</title>
 </head>
 
 <body class="bg-blue-100 font-sans min-h-screen pb-10">
@@ -14,99 +13,527 @@
     <!-- Header -->
     <header class="flex flex-col items-center py-10 px-4">
         <div class="w-full md:w-1/2 bg-gray-300 rounded-2xl md:rounded-full p-6 text-center shadow-xl relative">
+
             <!-- Bouton Retour à l'accueil -->
-            <a href="index.html" class="absolute top-4 left-6 bg-blue-800 border border-blue-950 text-white px-4 py-1.5 rounded-lg text-sm font-semibold hover:bg-blue-700 transition">
+            <a href="index.html"
+               class="absolute top-4 left-6 bg-blue-800 border border-blue-950 text-white px-4 py-1.5 rounded-lg text-sm font-semibold hover:bg-blue-700 transition">
                 ← Retour
             </a>
-            <h1 class="text-2xl font-bold mb-4 mt-6 md:mt-0">Photos des conventions</h1>
-            <img src="src/img/DragonBleu98-logoV2.png" alt="Logo" class="w-[200px] mx-auto rounded-full">
+            
+            <h1 class="text-2xl font-bold mb-4 mt-6 md:mt-0">
+                Photos des conventions
+            </h1>
+
+            
         </div>
+        <script>
+  // On sélectionne la barre de recherche
+  const inputRecherche = document.getElementById('barreRecherche');
+  
+  // On récupère TOUTES les images de la galerie d'un coup
+  const toutesLesImages = document.querySelectorAll('.galerie img');
+
+  // On écoute ce que l'utilisateur tape dans la barre
+  inputRecherche.addEventListener('input', (evenement) => {
+    const texteSaisi = evenement.target.value.toLowerCase();
+
+    // On parcourt chaque image présente dans le HTML
+    toutesLesImages.forEach(image => {
+      const idImage = image.id.toLowerCase();
+
+      // Si l'ID de l'image contient le texte tapé, on l'affiche, sinon on la cache
+      if (idImage.includes(texteSaisi)) {
+        image.style.display = 'inline-block'; // Réaffiche l'image
+      } else {
+        image.style.display = 'none'; // Cache l'image
+      }
+    });
+  });
+</script>
     </header>
 
     <!-- Galerie Générale -->
     <main class="max-w-5xl mx-auto px-4">
-
+        <!-- <input type="text" id="barreRecherche" placeholder="Rechercher une image par ID..."> -->
+        rrrrrrrrrrrrrrrrrrrrrrrr
         <!-- ANNÉE 2021 -->
         <section class="mb-12">
-            <h2 class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">Année 2021</h2>
-            
-            <h3 class="text-xl font-bold mb-3">Made in Asia 2021</h3> 
+
+            <h2 class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
+                Année 2021
+            </h2>
+
+            <h3 class="text-xl font-bold mb-3">
+                Made in Asia 2021
+            </h3>
+
             <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-                <img src="/src/img/cosplay/oc/madeinasia2021neko.jpeg" alt="Neko" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/oc/madeinasia2021neko3.jpeg" alt="Neko à la made in asia 2021" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/oc/madeinasia2021neko4.jpeg" alt="Neko à la made in asia 2021" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/oc/madeinasia2021neko5.jpeg" alt="Neko à la made in asia 2021" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/oc/madeinasia2021neko6.jpeg" alt="Neko à la made in asia 2021" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/oc/madeinasia2021neko7.jpeg" alt="Neko à la made in asia 2021" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/oc/madeinasia2021neko8.jpeg" alt="Neko à la made in asia 2021" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/oc/madeinasia2021neko9.jpeg" alt="Neko à la made in asia 2021" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/oc/madeinasia2021neko10.jpeg" alt="Neko à la made in asia 2021" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/oc/madeinasia2021neko11.jpeg" alt="Neko à la made in asia 2021" class="w-full h-64 object-cover bg-gray-200 rounded">
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
             </div>
-            
-            <h3 class="text-xl font-bold mb-3">Conventions 2023 (Aperçu)</h3>
+
+            <h3 class="text-xl font-bold mb-3">
+                Conventions 2023 (Aperçu)
+            </h3>
+
+            <!--
             <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-                <img src="/src/img/cosplay/***" alt="James" class="w-full h-64 object-cover bg-gray-200 rounded">
+                
             </div>
+            -->
+
         </section>
+
 
         <!-- ANNÉE 2022 -->
         <section class="mb-12">
-            <h2 class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">Année 2022</h2>
-            
-            <h3 class="text-xl font-bold mb-3">Comic con Bruxelles 2022</h3> 
+
+            <h2 class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
+                Année 2022
+            </h2>
+
+            <h3 class="text-xl font-bold mb-3">
+                Comic Con Bruxelles 2022
+            </h3>
+            <video src="/src/videos/2026-08-17-184059283.mp4"></video>
+
             <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-                <img src="/src/img/cosplay/oc/comicconn2022neko.jpeg" alt="Neko à la Comic con Bruxelles 2022" class="w-full h-64 object-cover bg-gray-200 rounded">
+
+                
+
             </div>
+
         </section>
+
 
         <!-- ANNÉE 2023 -->
         <section class="mb-12">
-            <h2 class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">Année 2023</h2>
-             
-            <h3 class="text-xl font-bold mb-3">Sortie Cosplay 2023</h3> 
+
+            <h2 class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
+                Année 2023
+            </h2>
+            <video src="/src/videos/catalklusifa1.mp4"></video>
+
+            <h3 class="text-xl font-bold mb-3">
+                Sortie Cosplay 2023
+            </h3>
+
             <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-                <img src="/src/img/cosplay/yamieve/sortiecosplay2023yamis.jpg" alt="Yami à la sortie cosplay au Rive gauche de Charleroi" class="w-full h-64 object-cover bg-gray-200 rounded">
+
+                
+
             </div>
 
-            <h3 class="text-xl font-bold mb-3">Japancon 2023</h3>
+
+            <h3 class="text-xl font-bold mb-3">
+                Japancon 2023
+            </h3>
+
             <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-                 <img src="/src/img/cosplay/ranma/japancon2023ranma.jpeg" alt="Ranma à la japon con 2023" class="w-full h-64 object-cover bg-gray-200 rounded">
+
+                
+
             </div>
 
-            <h3 class="text-xl font-bold mb-3">Made in asia 2023</h3>
+
+            <h3 class="text-xl font-bold mb-3">
+                Made in Asia 2023
+            </h3>
+
             <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-                <img src="/src/img/cosplay/yamieve/madeinasia2023yami.jpeg" alt="Yami à la made in asia 2023" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/*" alt="James" class="w-full h-64 object-cover bg-gray-200 rounded">
+
+                
+
             </div>
 
-            <h3 class="text-xl font-bold mb-3">Japan pop show 2023</h3>
+
+            <h3 class="text-xl font-bold mb-3">
+                Japan Pop Show 2023
+            </h3>
+
             <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-                <img src="/src/img/cosplay/lala/japanpopsholala4.jpg" alt="James" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/lala/japanpopshow2023lala.jpg" alt="James" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/lala/japanpopshow2023lala2.jpg" alt="James" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/lala/japanpopshows2023lala2.jpeg" alt="James" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/lala/japanpopshows2023lala3.jpeg" alt="James" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/lala/japanpopshows2023lala4.jpeg" alt="James" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/lala/japanpopshows2023lala5.jpeg" alt="James" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/lala/japanpopshows2023lala6.jpeg" alt="James" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/lala/japanpopshows2023lala7.jpeg" alt="James" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/lala/japanpopshows2023lala8.jpeg" alt="James" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/lala/japanpopshows2023lala9.jpeg" alt="James" class="w-full h-64 object-cover bg-gray-200 rounded">
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
             </div>
 
-            <h3 class="text-xl font-bold mb-3">Comic con 2023</h3>
+
+            <h3 class="text-xl font-bold mb-3">
+                Comic Con 2023
+            </h3>
+
             <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-                <img src="/src/img/cosplay/yamieve/japancon2023yami4.jpg" alt="James" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/yamieve/japancon2023yami5.jpg" alt="James" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/yamieve/japancon2023yami6.jpg" alt="James" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/yamieve/japoncon2023yami.jpeg" alt="James" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/yamieve/comiccon2023yami.jpeg" alt="James" class="w-full h-64 object-cover bg-gray-200 rounded">
-                <img src="/src/img/cosplay/yamieve/comiccon2023yami1.jpeg" alt="James" class="w-full h-64 object-cover bg-gray-200 rounded">
+
+                
+
+                
+
+                
+
+                
+
+                
+
             </div>
+
+        </section>
+
+
+        <!-- ANNÉE 2024 -->
+        <section class="mb-12">
+
+            <h2 class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
+                Année 2024
+            </h2>
+
+            <h3 class="text-xl font-bold mb-3">
+                Sortie Cosplay 2024
+            </h3>
+
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+
+                
+
+            </div>
+
+
+            <h3 class="text-xl font-bold mb-3">
+                Disney Fan Day 2024
+            </h3>
+
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+
+                
+
+                
+
+            </div>
+
+
+            <h3 class="text-xl font-bold mb-3">
+                Summer Geek 2024
+            </h3>
+
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+
+                
+
+                
+
+            </div>
+
+
+            <h3 class="text-xl font-bold mb-3">
+                Made in Asia 2024
+            </h3>
+
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+
+                
+
+                
+
+            </div>
+
+
+            <h3 class="text-xl font-bold mb-3">
+                Manganim 2024
+            </h3>
+
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+
+                
+
+            </div>
+
+
+            <!--
+            <h3 class="text-xl font-bold mb-3">
+                Comic Con 2024
+            </h3>
+
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+                
+            </div>
+            -->
+
+
+            <h3 class="text-xl font-bold mb-3">
+                Winter 2024
+            </h3>
+
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+
+                
+
+            </div>
+
+        </section>
+
+
+        <!-- ANNÉE 2025 -->
+        <section class="mb-12">
+
+            <h2 class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
+                Année 2025
+            </h2>
+
+
+            <h3 class="text-xl font-bold mb-3">
+                Sortie 2025
+            </h3>
+
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+            </div>
+
+
+            <h3 class="text-xl font-bold mb-3">
+                Convention Otaku 2025
+            </h3>
+
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+
+                
+
+            </div>
+
+
+            <h3 class="text-xl font-bold mb-3">
+                D-Con 2025
+            </h3>
+
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+
+                
+
+            </div>
+
+
+            <h3 class="text-xl font-bold mb-3">
+                Made in Asia 2025
+            </h3>
+
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+
+                
+
+                
+
+            </div>
+
+
+            <h3 class="text-xl font-bold mb-3">
+                Disney Fan Day 2025
+            </h3>
+
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+
+                
+
+            </div>
+
+
+            <h3 class="text-xl font-bold mb-3">
+                Japan Day 2025
+            </h3>
+
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+
+                
+
+            </div>
+
+
+            <h3 class="text-xl font-bold mb-3">
+                Summer Geek 2025
+            </h3>
+
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+
+                
+
+            </div>
+
+        </section>
+
+
+        <!-- ANNÉE 2026 -->
+        <section class="mb-12">
+
+            <h2 class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
+                Année 2026
+            </h2>
+
+
+            <h3 class="text-xl font-bold mb-3">
+                D-Con 2026
+            </h3>
+
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+
+                
+
+            </div>
+
+
+            <h3 class="text-xl font-bold mb-3">
+                Sortie Cosplay 2026
+            </h3>
+
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+
+                
+
+                
+
+                
+
+                <!--
+                
+                -->
+
+            </div>
+
+
+            <!--
+            <h3 class="text-xl font-bold mb-3">
+                **** 2026
+            </h3>
+
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+
+                
+
+            </div>
+            -->
+
+
+           
+
+        </section>
+
+
+        <section class="mb-12">
+
+            <h3 class="text-xl font-bold mb-3">
+                Japancon 2026
+            </h3>
+
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+
+                
+
+            </div>
+
+        </section>
+
+
+        <section class="mb-12">
+
+            <h3 class="text-xl font-bold mb-3">
+                Mangames Day 2026
+            </h3>
+
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+
+                
+
+            </div>
+
+        </section>
+
+
+        <section class="mb-12">
+
+            <h3 class="text-xl font-bold mb-3">
+                Sortie Cosplay 2026
+            </h3>
+
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+
+                
+
+                
+
+                
+
+                
+
+            </div>
+
         </section>
 
     </main>
+    
+
+    <script type="module" src="/src/galery.js"></script>
 
 </body>
+ <footer class="font-sans flex flex-col items-center justify-center min-h-screen">
+    <p>copyring 2026 DragonBlezu98 Cosplay. Tout droits réservés.</p>
+    <p> <a href="mention.html">Mention légales</a></p>
+  </footer>
 </html>
+```
