@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/Dragonbleu98Cosplay/src/img/logo2.2.png" />
@@ -14,12 +15,11 @@
     <header class="flex flex-col items-center py-10 px-4">
         <div class="w-full md:w-1/2 bg-gray-300 rounded-2xl md:rounded-full p-6 text-center shadow-xl relative">
 
-            <!-- Bouton Retour à l'accueil -->
             <a href="index.html"
                class="absolute top-4 left-6 bg-blue-800 border border-blue-950 text-white px-4 py-1.5 rounded-lg text-sm font-semibold hover:bg-blue-700 transition">
                 ← Retour
             </a>
-            
+
             <h1 class="text-2xl font-bold mb-4 mt-6 md:mt-0">
                 Photos des conventions
             </h1>
@@ -28,36 +28,12 @@
                  alt="Logo DragonBleu98 Cosplay"
                  class="w-[200px] mx-auto rounded-full">
         </div>
-        <script>
-  // On sélectionne la barre de recherche
-  const inputRecherche = document.getElementById('barreRecherche');
-  
-  // On récupère TOUTES les images de la galerie d'un coup
-  const toutesLesImages = document.querySelectorAll('.galerie img');
-
-  // On écoute ce que l'utilisateur tape dans la barre
-  inputRecherche.addEventListener('input', (evenement) => {
-    const texteSaisi = evenement.target.value.toLowerCase();
-
-    // On parcourt chaque image présente dans le HTML
-    toutesLesImages.forEach(image => {
-      const idImage = image.id.toLowerCase();
-
-      // Si l'ID de l'image contient le texte tapé, on l'affiche, sinon on la cache
-      if (idImage.includes(texteSaisi)) {
-        image.style.display = 'inline-block'; // Réaffiche l'image
-      } else {
-        image.style.display = 'none'; // Cache l'image
-      }
-    });
-  });
-</script>
     </header>
+
 
     <!-- Galerie Générale -->
     <main class="max-w-5xl mx-auto px-4">
-        <!-- <input type="text" id="barreRecherche" placeholder="Rechercher une image par ID..."> -->
-        
+
         <!-- ANNÉE 2021 -->
         <section class="mb-12">
 
@@ -69,104 +45,119 @@
                 Made in Asia 2021
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/oc/madeinasia2021neko.jpeg"
-                     alt="Neko à la Made in Asia 2021"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="neko">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
-                     
-            
-    
+                <div>
+                    <img src="/img/cosplay/oc/madeinasia2021neko.jpeg"
+                         alt="Neko à la Made in Asia 2021"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="neko">
 
-                <img src="/img/cosplay/oc/madeinasia2021neko3.jpeg"
-                     alt="Neko à la Made in Asia 2021"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="neko">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                    <p class="mt-2">
+                        Photo : DragonBleu98
+                    </p>
+                </div>
 
-                <img src="/img/cosplay/oc/madeinasia2021neko4.jpeg"
-                     alt="Neko à la Made in Asia 2021"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="neko">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/oc/madeinasia2021neko3.jpeg"
+                         alt="Neko à la Made in Asia 2021"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="neko3">
 
-                <img src="/img/cosplay/oc/madeinasia2021neko5.jpeg"
-                     alt="Neko à la Made in Asia 2021"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="neko">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                    <p class="mt-2">
+                        Photo : Loki Dark World
+                    </p>
+                </div>
 
-                <img src="/img/cosplay/oc/madeinasia2021neko6.jpeg"
-                     alt="Neko à la Made in Asia 2021"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="neko">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/oc/madeinasia2021neko4.jpeg"
+                         alt="Neko à la Made in Asia 2021"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="neko4">
 
-                <img src="/img/cosplay/oc/madeinasia2021neko7.jpeg"
-                     alt="Neko à la Made in Asia 2021"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="neko">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                    <p class="mt-2">
+                        Photo : Loki Dark World
+                    </p>
+                </div>
 
-                <img src="/img/cosplay/oc/madeinasia2021neko8.jpeg"
-                     alt="Neko à la Made in Asia 2021"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="neko">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/oc/madeinasia2021neko5.jpeg"
+                         alt="Neko à la Made in Asia 2021"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="neko5">
 
-                <img src="/img/cosplay/oc/madeinasia2021neko9.jpeg"
-                     alt="Neko à la Made in Asia 2021"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="neko">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                    <p class="mt-2">
+                        Photo : Loki Dark World
+                    </p>
+                </div>
 
-                <img src="/img/cosplay/oc/madeinasia2021neko10.jpeg"
-                     alt="Neko à la Made in Asia 2021"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="neko">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
-                <img src="/img/cosplay/oc/madeinasia2021neko11.jpeg"
-                     alt="Neko à la Made in Asia 2021"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="neko">
-                    
-                <!-- <p>
-                    photo: <a href="https://www.facebook.com/jeremy.laurencin.5">sean Arrows</a> 
-                </p>
-            --> 
+                <div>
+                    <img src="/img/cosplay/oc/madeinasia2021neko6.jpeg"
+                         alt="Neko à la Made in Asia 2021"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="neko6">
+
+                    <p class="mt-2">
+                        Photo : autre photographe
+                    </p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/oc/madeinasia2021neko7.jpeg"
+                         alt="Neko à la Made in Asia 2021"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="neko7">
+
+                    <p class="mt-2">
+                        Photo : Loki Dark World
+                    </p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/oc/madeinasia2021neko8.jpeg"
+                         alt="Neko à la Made in Asia 2021"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="neko8">
+
+                    <p class="mt-2">
+                        Photo : Loki Dark World
+                    </p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/oc/madeinasia2021neko9.jpeg"
+                         alt="Neko à la Made in Asia 2021"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="neko9">
+
+                    <p class="mt-2">
+                        Photo : autre photographe
+                    </p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/oc/madeinasia2021neko10.jpeg"
+                         alt="Neko à la Made in Asia 2021"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="neko10">
+
+                    <p class="mt-2">
+                        Photo : Loki Dark World
+                    </p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/oc/madeinasia2021neko11.jpeg"
+                         alt="Neko à la Made in Asia 2021"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="neko11">
+
+                    <p class="mt-2">
+                        Photo : <a href="https://www.facebook.com/jeremy.laurencin.5">Sean Arrows</a>
+                    </p>
+                </div>
 
             </div>
-
-
-
-            <!--
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-                <img src="/img/cosplay/***"
-                     alt="Photo de cosplay"
-                     class="w-full h-64 object-cover bg-gray-200 rounded">
-            </div>
-            -->
-
         </section>
 
 
@@ -181,18 +172,20 @@
                 Comic Con Bruxelles 2022
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/oc/comicconn2022neko.jpeg"
-                     alt="Neko à la Comic Con Bruxelles 2022"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="neko">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/oc/comicconn2022neko.jpeg"
+                         alt="Neko à la Comic Con Bruxelles 2022"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="neko2022">
+
+                    <p class="mt-2">
+                        Photo : autre photographe
+                    </p>
+                </div>
 
             </div>
-
         </section>
 
 
@@ -207,15 +200,18 @@
                 Sortie Cosplay 2023
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/yamieve/sortiecosplay2023yamis.jpg"
-                     alt="Yami à la sortie cosplay au Rive Gauche de Charleroi en 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="Yami">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/yamieve/sortiecosplay2023yamis.jpg"
+                         alt="Yami à la sortie cosplay au Rive Gauche de Charleroi en 2023"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="Yami2023">
+
+                    <p class="mt-2">
+                        Photo : Loki Dark World
+                    </p>
+                </div>
 
             </div>
 
@@ -224,15 +220,18 @@
                 Japancon 2023
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/ranma/japancon2023ranma.jpeg"
-                     alt="Ranma à la Japancon 2023"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="ranma">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/ranma/japancon2023ranma.jpeg"
+                         alt="Ranma à la Japancon 2023"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="ranma2023">
+
+                    <p class="mt-2">
+                        Photo :autre photographe
+                    </p>
+                </div>
 
             </div>
 
@@ -241,16 +240,18 @@
                 Made in Asia 2023
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/yamieve/madeinasia2023yami.jpeg"
-                     alt="Yami à la Made in Asia 2023"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="Yami">
-                    <!-- <p>
-                    photo: <a href="">...</a> 
-                </p>
-            --> 
+                <div>
+                    <img src="/img/cosplay/yamieve/madeinasia2023yami.jpeg"
+                         alt="Yami à la Made in Asia 2023"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="Yami2023mia">
+
+                    <p class="mt-2">
+                        Photo : Loki Dark World
+                    </p>
+                </div>
 
             </div>
 
@@ -259,89 +260,128 @@
                 Japan Pop Show 2023
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/lala/japanpopsholala4.jpg"
-                     alt="Lala à la Japan Pop Show 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="lala">
-                     <!-- <p>
-                    photo: DragonBleu98
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/lala/japanpopsholala4.jpg"
+                         alt="Lala à la Japan Pop Show 2023"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="lala1">
 
-                <img src="/img/cosplay/lala/japanpopshow2023lala.jpg"
-                     alt="Lala à la Japan Pop Show 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="lala">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                    <p class="mt-2">
+                        Photo : DragonBleu98
+                    </p>
+                </div>
 
-                <img src="/img/cosplay/lala/japanpopshow2023lala2.jpg"
-                     alt="Lala à la Japan Pop Show 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="lala">
-                    <!-- <p>
-                    photo: <a href="">...</a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/lala/japanpopshow2023lala.jpg"
+                         alt="Lala à la Japan Pop Show 2023"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="lala2">
 
-                <img src="/img/cosplay/lala/japanpopshows2023lala2.jpeg"
-                     alt="Lala à la Japan Pop Show 2023"
-                     class="w-full h-64 object-cover object-[center_30%] bg-gray-200 rounded"
-                     id="lala">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                    <p class="mt-2">
+                        Photo : Loki Dark World
+                    </p>
+                </div>
 
-                <img src="/img/cosplay/lala/japanpopshows2023lala3.jpeg"
-                     alt="Lala à la Japan Pop Show 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="lala">
-                     <!-- <p>
-                    photo: DragonBleu98
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/lala/japanpopshow2023lala2.jpg"
+                         alt="Lala à la Japan Pop Show 2023"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="lala3">
 
-                <img src="/img/cosplay/lala/japanpopshows2023lala4.jpeg"
-                     alt="Lala à la Japan Pop Show 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="lala">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
-                <img src="/img/cosplay/lala/japanpopshows2023lala5.jpeg"
-                     alt="Lala à la Japan Pop Show 2023"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="lala">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
-                <img src="/img/cosplay/lala/japanpopshows2023lala6.jpeg"
-                     alt="Lala à la Japan Pop Show 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="lala">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                    <p class="mt-2">
+                        Photo : Loki Dark World
+                    </p>
+                </div>
 
-                <img src="/img/cosplay/lala/japanpopshows2023lala7.jpeg"
-                     alt="Lala à la Japan Pop Show 2023"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="lala">
-                    <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
-                <img src="/img/cosplay/lala/japanpopshows2023lala8.jpeg"
-                     alt="Lala à la Japan Pop Show 2023"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="lala">
+                <div>
+                    <img src="/img/cosplay/lala/japanpopshows2023lala2.jpeg"
+                         alt="Lala à la Japan Pop Show 2023"
+                         class="w-full h-64 object-cover object-[center_30%] bg-gray-200 rounded"
+                         id="lala4">
 
-                <img src="/img/cosplay/lala/japanpopshows2023lala9.jpeg"
-                     alt="Lala à la Japan Pop Show 2023"
-                     class="w-full h-64 object-cover object-[center_30%] bg-gray-200 rounded"
-                     id="lala">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                    <p class="mt-2">
+                        Photo : Loki Dark World
+                    </p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/lala/japanpopshows2023lala3.jpeg"
+                         alt="Lala à la Japan Pop Show 2023"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="lala5">
+
+                    <p class="mt-2">
+                        Photo : DragonBleu98
+                    </p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/lala/japanpopshows2023lala4.jpeg"
+                         alt="Lala à la Japan Pop Show 2023"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="lala6">
+
+                    <p class="mt-2">
+                        Photo : Loki Dark World
+                    </p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/lala/japanpopshows2023lala5.jpeg"
+                         alt="Lala à la Japan Pop Show 2023"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="lala7">
+
+                    <p class="mt-2">
+                        Photo : Loki Dark World
+                    </p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/lala/japanpopshows2023lala6.jpeg"
+                         alt="Lala à la Japan Pop Show 2023"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="lala8">
+
+                    <p class="mt-2">
+                        Photo : Loki Dark World
+                    </p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/lala/japanpopshows2023lala7.jpeg"
+                         alt="Lala à la Japan Pop Show 2023"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="lala9">
+
+                    <p class="mt-2">
+                        Photo : Loki Dark World
+                    </p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/lala/japanpopshows2023lala8.jpeg"
+                         alt="Lala à la Japan Pop Show 2023"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="lala10">
+
+                    <p class="mt-2">
+                        Photo : Loki Dark World
+                    </p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/lala/japanpopshows2023lala9.jpeg"
+                         alt="Lala à la Japan Pop Show 2023"
+                         class="w-full h-64 object-cover object-[center_30%] bg-gray-200 rounded"
+                         id="lala11">
+
+                    <p class="mt-2">
+                        Photo : Loki Dark World
+                    </p>
+                </div>
 
             </div>
 
@@ -350,47 +390,62 @@
                 Comic Con 2023
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/yamieve/japancon2023yami4.jpg"
-                     alt="Yami à la Comic Con 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="Yami">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/yamieve/japancon2023yami4.jpg"
+                         alt="Yami à la Comic Con 2023"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="YamiComic1">
 
-                <img src="/img/cosplay/yamieve/japancon2023yami5.jpg"
-                     alt="Yami à la Comic Con 2023"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="Yami">
-                    <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                    <p class="mt-2">
+                        Photo :
+                    </p>
+                </div>
 
-                <img src="/img/cosplay/yamieve/japoncon2023yami.jpeg"
-                     alt="Yami à la Comic Con 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="Yami">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/yamieve/japancon2023yami5.jpg"
+                         alt="Yami à la Comic Con 2023"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="YamiComic2">
 
-                <img src="/img/cosplay/yamieve/comiccon2023yami.jpeg"
-                     alt="Yami à la Comic Con 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="Yami">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                    <p class="mt-2">
+                        Photo :
+                    </p>
+                </div>
 
-                <img src="/img/cosplay/yamieve/comiccon2023yami1.jpeg"
-                     alt="Yami à la Comic Con 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="Yami">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/yamieve/japoncon2023yami.jpeg"
+                         alt="Yami à la Comic Con 2023"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="YamiComic3">
+
+                    <p class="mt-2">
+                        Photo :
+                    </p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/yamieve/comiccon2023yami.jpeg"
+                         alt="Yami à la Comic Con 2023"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="YamiComic4">
+
+                    <p class="mt-2">
+                        Photo :
+                    </p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/yamieve/comiccon2023yami1.jpeg"
+                         alt="Yami à la Comic Con 2023"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="YamiComic5">
+
+                    <p class="mt-2">
+                        Photo :
+                    </p>
+                </div>
 
             </div>
 
@@ -408,15 +463,18 @@
                 Sortie Cosplay 2024
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/margesimpson/fetedequartier2024marge.jpg"
-                     alt="Marge Simpson à la sortie cosplay 2024"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="marge">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/margesimpson/fetedequartier2024marge.jpg"
+                         alt="Marge Simpson à la sortie cosplay 2024"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="marge2024">
+
+                    <p class="mt-2">
+                        Photo :
+                    </p>
+                </div>
 
             </div>
 
@@ -425,23 +483,29 @@
                 Disney Fan Day 2024
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/margesimpson/disneyfanday2024marge.jpg"
-                     alt="Marge Simpson au Disney Fan Day 2024"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="marge">
-                    <!-- <p>
-                    photo: <a href="">Disney fan day</a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/margesimpson/disneyfanday2024marge.jpg"
+                         alt="Marge Simpson au Disney Fan Day 2024"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="margeDisney1">
 
-                <img src="/img/cosplay/margesimpson/disneyfanday2024marge2.jpg"
-                     alt="Marge Simpson au Disney Fan Day 2024"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="marge">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                    <p class="mt-2">
+                        Photo :
+                    </p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/margesimpson/disneyfanday2024marge2.jpg"
+                         alt="Marge Simpson au Disney Fan Day 2024"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="margeDisney2">
+
+                    <p class="mt-2">
+                        Photo :
+                    </p>
+                </div>
 
             </div>
 
@@ -450,23 +514,29 @@
                 Summer Geek 2024
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/margesimpson/summergeek2024marge.jpg"
-                     alt="Marge Simpson au Summer Geek 2024"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="marge">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/margesimpson/summergeek2024marge.jpg"
+                         alt="Marge Simpson au Summer Geek 2024"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="margeSummer1">
 
-                <img src="/img/cosplay/margesimpson/summergeek2024marge2.jpg"
-                     alt="Marge Simpson au Summer Geek 2024"
-                     class="w-full h-64 object-cover object-[center_30%] bg-gray-200 rounded"
-                     id="marge">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                    <p class="mt-2">
+                        Photo :
+                    </p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/margesimpson/summergeek2024marge2.jpg"
+                         alt="Marge Simpson au Summer Geek 2024"
+                         class="w-full h-64 object-cover object-[center_30%] bg-gray-200 rounded"
+                         id="margeSummer2">
+
+                    <p class="mt-2">
+                        Photo :
+                    </p>
+                </div>
 
             </div>
 
@@ -475,23 +545,29 @@
                 Made in Asia 2024
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/meloetta/Madeinasia2024meloetta2.jpg"
-                     alt="Meloetta à la Made in Asia 2024"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="meloetta">
-                     <!-- <p>
-                    photo: DragonBleu98 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/meloetta/Madeinasia2024meloetta2.jpg"
+                         alt="Meloetta à la Made in Asia 2024"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="meloetta1">
 
-                <img src="/img/cosplay/meloetta/madeinasia2024meoetta.jpeg"
-                     alt="Meloetta à la Made in Asia 2024"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="meloetta">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                    <p class="mt-2">
+                        Photo :
+                    </p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/meloetta/madeinasia2024meoetta.jpeg"
+                         alt="Meloetta à la Made in Asia 2024"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="meloetta2">
+
+                    <p class="mt-2">
+                        Photo :
+                    </p>
+                </div>
 
             </div>
 
@@ -500,45 +576,38 @@
                 Manganim 2024
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/oc/sky.jpg"
-                     alt="Sky à Manganim 2024"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="sky">
-                     <!-- <p>
-                    DragonBleu98
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/oc/sky.jpg"
+                         alt="Sky à Manganim 2024"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="sky">
+
+                    <p class="mt-2">
+                        Photo :
+                    </p>
+                </div>
 
             </div>
-
-
-            <!--
-            <h3 class="text-xl font-bold mb-3">
-                Comic Con 2024
-            </h3>
-
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-                <img src="/img/cosplay/"
-                     alt="Photo de cosplay"
-                     class="w-full h-64 object-cover bg-gray-200 rounded">
-            </div>
-            -->
 
 
             <h3 class="text-xl font-bold mb-3">
                 Winter 2024
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/yamieve/evewinter2024.jpg"
-                     alt="Yami à Winter 2024"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="Yami">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/yamieve/evewinter2024.jpg"
+                         alt="Yami à Winter 2024"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="YamiWinter2024">
+
+                    <p class="mt-2">
+                        Photo :
+                    </p>
+                </div>
 
             </div>
 
@@ -552,101 +621,110 @@
                 Année 2025
             </h2>
 
-
             <h3 class="text-xl font-bold mb-3">
                 Sortie 2025
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/james/sortiecosplay2025james.jpg"
-                     alt="James à la sortie cosplay 2025"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="james">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/james/sortiecosplay2025james.jpg"
+                         alt="James à la sortie cosplay 2025"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="james1">
 
-                <img src="/img/cosplay/james/sortiecosplay2025james2.jpg"
-                     alt="James à la sortie cosplay 2025"
-                     class="w-full h-64 object-cover object-[center_5%] bg-gray-200 rounded"
-                     id="james">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                    <p class="mt-2">Photo :</p>
+                </div>
 
+                <div>
+                    <img src="/img/cosplay/james/sortiecosplay2025james2.jpg"
+                         alt="James à la sortie cosplay 2025"
+                         class="w-full h-64 object-cover object-[center_5%] bg-gray-200 rounded"
+                         id="james2">
 
-                <img src="/img/cosplay/james/sortiecosplay2025james3.jpg"
-                     alt="James à la sortie cosplay 2025"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="james">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                    <p class="mt-2">Photo :</p>
+                </div>
 
-                <img src="/img/cosplay/james/sortiecosplay2025james4.jpg"
-                     alt="James à la sortie cosplay 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="james">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/james/sortiecosplay2025james3.jpg"
+                         alt="James à la sortie cosplay 2025"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="james3">
 
-                <img src="/img/cosplay/james/sortiecosplay2025james5.jpg"
-                     alt="James à la sortie cosplay 2025"
-                     class="w-full h-64 object-cover object-[center_30%] bg-gray-200 rounded"
-                     id="james">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                    <p class="mt-2">Photo :</p>
+                </div>
 
-                <img src="/img/cosplay/james/sortiecosplay2025james6.jpg"
-                     alt="James à la sortie cosplay 2025"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="james">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/james/sortiecosplay2025james4.jpg"
+                         alt="James à la sortie cosplay 2025"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="james4">
 
-                <img src="/img/cosplay/james/sortiecosplay2025james7.jpg"
-                     alt="James à la sortie cosplay 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="james">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                    <p class="mt-2">Photo :</p>
+                </div>
 
-                <img src="/img/cosplay/james/sortiecosplay2025james8.jpg"
-                     alt="James à la sortie cosplay 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="james">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/james/sortiecosplay2025james5.jpg"
+                         alt="James à la sortie cosplay 2025"
+                         class="w-full h-64 object-cover object-[center_30%] bg-gray-200 rounded"
+                         id="james5">
 
-                <img src="/img/cosplay/james/sortiecosplay2025james11.jpg"
-                     alt="James à la sortie cosplay 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="james">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                    <p class="mt-2">Photo :</p>
+                </div>
 
-                <img src="/img/cosplay/james/sortiecosplay2025james12.jpg"
-                     alt="James à la sortie cosplay 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="james">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/james/sortiecosplay2025james6.jpg"
+                         alt="James à la sortie cosplay 2025"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="james6">
 
-                <img src="/img/cosplay/arale/sortiecosplayarale2025.jpg"
-                     alt="Arale à la sortie cosplay 2025"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="arale">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                    <p class="mt-2">Photo :</p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/james/sortiecosplay2025james7.jpg"
+                         alt="James à la sortie cosplay 2025"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="james7">
+
+                    <p class="mt-2">Photo :</p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/james/sortiecosplay2025james8.jpg"
+                         alt="James à la sortie cosplay 2025"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="james8">
+
+                    <p class="mt-2">Photo :</p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/james/sortiecosplay2025james11.jpg"
+                         alt="James à la sortie cosplay 2025"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="james11">
+
+                    <p class="mt-2">Photo :</p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/james/sortiecosplay2025james12.jpg"
+                         alt="James à la sortie cosplay 2025"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="james12">
+
+                    <p class="mt-2">Photo :</p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/arale/sortiecosplayarale2025.jpg"
+                         alt="Arale à la sortie cosplay 2025"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="arale">
+
+                    <p class="mt-2">Photo :</p>
+                </div>
 
             </div>
 
@@ -655,15 +733,16 @@
                 Convention Otaku 2025
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/james/soigniejames.jpg"
-                     alt="James à la Convention Otaku 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="james">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/james/soigniejames.jpg"
+                         alt="James à la Convention Otaku 2025"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="jamesotaku">
+
+                    <p class="mt-2">Photo :</p>
+                </div>
 
             </div>
 
@@ -672,15 +751,16 @@
                 D-Con 2025
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/ranma/dconranma2025.jpg"
-                     alt="Ranma à la D-Con 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="ranma">
-                <!-- <p>
-                    photo: DragonBleu98
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/ranma/dconranma2025.jpg"
+                         alt="Ranma à la D-Con 2025"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="ranmaDcon2025">
+
+                    <p class="mt-2">Photo :</p>
+                </div>
 
             </div>
 
@@ -689,23 +769,25 @@
                 Made in Asia 2025
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/train/madeinasiatrain.jpg"
-                     alt="Train à la Made in Asia 2025"
-                     class="w-full h-64 object-cover object-[center_30%] bg-gray-200 rounded"
-                     id="train">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/train/madeinasiatrain.jpg"
+                         alt="Train à la Made in Asia 2025"
+                         class="w-full h-64 object-cover object-[center_30%] bg-gray-200 rounded"
+                         id="train1">
 
-                <img src="/img/cosplay/train/madeinasiatrain2.jpg"
-                     alt="Train à la Made in Asia 2025"
-                     class="w-full h-64 object-cover object-[center_30%] bg-gray-200 rounded"
-                     id="train">
-                     <!-- <p>
-                    photo: DragonBleu98 
-                </p>-->
+                    <p class="mt-2">Photo :</p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/train/madeinasiatrain2.jpg"
+                         alt="Train à la Made in Asia 2025"
+                         class="w-full h-64 object-cover object-[center_30%] bg-gray-200 rounded"
+                         id="train2">
+
+                    <p class="mt-2">Photo :</p>
+                </div>
 
             </div>
 
@@ -714,15 +796,16 @@
                 Disney Fan Day 2025
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/train/disneyfandaytrain.jpg"
-                     alt="Train au Disney Fan Day 2025"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="train">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/train/disneyfandaytrain.jpg"
+                         alt="Train au Disney Fan Day 2025"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="trainDisney2025">
+
+                    <p class="mt-2">Photo :</p>
+                </div>
 
             </div>
 
@@ -731,15 +814,16 @@
                 Japan Day 2025
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/oc/japanday2025neko.jpg"
-                     alt="Neko au Japan Day 2025"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="neko">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/oc/japanday2025neko.jpg"
+                         alt="Neko au Japan Day 2025"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="nekoJapanDay2025">
+
+                    <p class="mt-2">Photo :</p>
+                </div>
 
             </div>
 
@@ -748,15 +832,16 @@
                 Summer Geek 2025
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/oc/summergeek2025neko.jpg"
-                     alt="Neko au Summer Geek 2025"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="neko">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/oc/summergeek2025neko.jpg"
+                         alt="Neko au Summer Geek 2025"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="nekoSummer2025">
+
+                    <p class="mt-2">Photo :</p>
+                </div>
 
             </div>
 
@@ -775,15 +860,16 @@
                 D-Con 2026
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/ranma/dcon2026ranma.jpg"
-                     alt="Ranma à la D-Con 2026"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="ranma">
-                    <!-- <p>
-                    photo: <a href="https://www.facebook.com/Lilico2">Lilico</a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/ranma/dcon2026ranma.jpg"
+                         alt="Ranma à la D-Con 2026"
+                         class="w-full h-64 object-cover bg-gray-200 rounded"
+                         id="ranmaDcon2026">
+
+                    <p class="mt-2">Photo :</p>
+                </div>
 
             </div>
 
@@ -792,56 +878,36 @@
                 Sortie Cosplay 2026
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/ranma/sortiecosplay2026ranma.jpg"
-                     alt="Ranma à la sortie cosplay 2026"
-                     class="w-full h-64 object-cover object-[center_30%] bg-gray-200 rounded"
-                     id="ranma">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/ranma/sortiecosplay2026ranma.jpg"
+                         alt="Ranma à la sortie cosplay 2026"
+                         class="w-full h-64 object-cover object-[center_30%] bg-gray-200 rounded"
+                         id="ranmaSortie2026">
 
-                <img src="/img/cosplay/ranma/sortiecosplay2026ranma2.jpg"
-                     alt="Ranma à la sortie cosplay 2026"
-                     class="w-full h-64 object-cover object-[center_25%] bg-gray-200 rounded"
-                     id="ranma">
-                     <!-- <p>
-                    photo: <a href="https://www.instagram.com/masu_pix/">Masu pix</a> 
-                </p>-->
-                     
+                    <p class="mt-2">Photo :</p>
+                </div>
 
-                <img src="/img/cosplay/ranma/sortiecosplay2026ranma3.jpeg"
-                     alt="Ranma à la sortie cosplay 2026"
-                     class="w-full h-64 object-cover object-[center_25%] bg-gray-200 rounded"
-                     id="ranma">
+                <div>
+                    <img src="/img/cosplay/ranma/sortiecosplay2026ranma2.jpg"
+                         alt="Ranma à la sortie cosplay 2026"
+                         class="w-full h-64 object-cover object-[center_25%] bg-gray-200 rounded"
+                         id="ranmaSortie2026-2">
 
-                <!--
-                <img src="/img/cosplay/ranma/"
-                     alt="Ranma à la sortie cosplay 2026"
-                     class="w-full h-64 object-cover bg-gray-200 rounded"
-                     id="ranma">
-                -->
+                    <p class="mt-2">Photo : Masu pix</p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/ranma/sortiecosplay2026ranma3.jpeg"
+                         alt="Ranma à la sortie cosplay 2026"
+                         class="w-full h-64 object-cover object-[center_25%] bg-gray-200 rounded"
+                         id="ranmaSortie2026-3">
+
+                    <p class="mt-2">Photo :</p>
+                </div>
 
             </div>
-
-
-            <!--
-            <h3 class="text-xl font-bold mb-3">
-                **** 2026
-            </h3>
-
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-
-                <img src="/img/cosplay/lala/japanpopsholala4.jpg"
-                     alt="Lala à l'événement"
-                     class="w-full h-64 object-cover bg-gray-200 rounded">
-
-            </div>
-            -->
-
-
-           
 
         </section>
 
@@ -852,15 +918,16 @@
                 Japancon 2026
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/ranma/japancon2023ranma.jpeg"
-                     alt="Ranma à la Japancon 2026"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="ranma">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/ranma/japancon2023ranma.jpeg"
+                         alt="Ranma à la Japancon 2026"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="ranmaJapancon2026">
+
+                    <p class="mt-2">Photo :</p>
+                </div>
 
             </div>
 
@@ -873,15 +940,16 @@
                 Mangames Day 2026
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/ranma/ranmamangamesday.jpg"
-                     alt="Ranma au Mangames Day 2026"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="ranma">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/ranma/ranmamangamesday.jpg"
+                         alt="Ranma au Mangames Day 2026"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="ranmaMangames2026">
+
+                    <p class="mt-2">Photo :</p>
+                </div>
 
             </div>
 
@@ -894,53 +962,60 @@
                 Sortie Cosplay 2026
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-6">
 
-                <img src="/img/cosplay/oc/carolotattoo.jpg"
-                     alt="Carolotattoo à la sortie cosplay 2026"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="moma">
-                     <!-- <p>
-                    photo: DragonBleu98 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/oc/carolotattoo.jpg"
+                         alt="Carolotattoo à la sortie cosplay 2026"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="moma">
 
-                <img src="/img/cosplay/oc/lucifasortiecosplayliege.jpeg"
-                     alt="Lucifa à la sortie cosplay à Liège en 2026"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="lucifa">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                    <p class="mt-2">Photo : DragonBleu98</p>
+                </div>
 
-                <img src="/img/cosplay/oc/lucifasortiecosplayliege2.jpeg"
-                     alt="Lucifa à la sortie cosplay à Liège en 2026"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="lucifa">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                <div>
+                    <img src="/img/cosplay/oc/lucifasortiecosplayliege.jpeg"
+                         alt="Lucifa à la sortie cosplay à Liège en 2026"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="lucifa">
 
-                <img src="/img/cosplay/oc/lucifasortiecosplayliege3.jpeg"
-                     alt="Lucifa à la sortie cosplay à Liège en 2026"
-                     class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
-                     id="lucifa">
-                     <!-- <p>
-                    photo: <a href=""></a> 
-                </p>-->
+                    <p class="mt-2">Photo :</p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/oc/lucifasortiecosplayliege2.jpeg"
+                         alt="Lucifa à la sortie cosplay à Liège en 2026"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="lucifa2">
+
+                    <p class="mt-2">Photo :</p>
+                </div>
+
+                <div>
+                    <img src="/img/cosplay/oc/lucifasortiecosplayliege3.jpeg"
+                         alt="Lucifa à la sortie cosplay à Liège en 2026"
+                         class="w-full h-64 object-cover object-[center_20%] bg-gray-200 rounded"
+                         id="lucifa3">
+
+                    <p class="mt-2">Photo :</p>
+                </div>
 
             </div>
 
         </section>
 
     </main>
-    
+
 
     <script type="module" src="/src/galery.js"></script>
 
+    <footer class="font-sans flex flex-col items-center justify-center">
+        <p>Copyright 2026 DragonBleu98 Cosplay. Tous droits réservés.</p>
+        <p>
+            <a href="mention.html">Mentions légales</a>
+        </p>
+    </footer>
+
 </body>
- <footer class="font-sans flex flex-col items-center justify-center min-h-screen">
-    <p>copyring 2026 DragonBlezu98 Cosplay. Tout droits réservés.</p>
-    <p> <a href="mention.html">Mention légales</a></p>
-  </footer>
 </html>
 ```
