@@ -1,3 +1,4 @@
+
 import { createApp } from 'vue'
 import cosplays from './assets/cosplays.js'
 import './index.css'
