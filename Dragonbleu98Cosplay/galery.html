@@ -1,26 +1,39 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/Dragonbleu98Cosplay/src/img/logo2.2.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Galerie photos des conventions cosplay de DragonBleu98." />
-    <title>DragonBleu98 - Galerie Conventions</title>
-    <link href="src/index.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Galerie photos des conventions cosplay de DragonBleu98. Découvrez ses cosplays de 2021 à 2026.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="icon" type="image/png"
+          href="/Dragonbleu98Cosplay/src/img/logo2.2.png">
+
+    <link rel="stylesheet" href="/src/index.css">
+
+    <title>DragonBleu98 - Galerie des conventions cosplay</title>
 </head>
 
 <body class="bg-blue-100 font-sans min-h-screen pb-10">
 
-    <!-- Header -->
+    <!-- =====================================
+         HEADER
+    ====================================== -->
+
     <header class="flex flex-col items-center py-10 px-4">
+
         <div class="w-full md:w-1/2 bg-gray-300 rounded-2xl md:rounded-full p-6 text-center shadow-xl relative">
 
-            <!-- Bouton Retour à l'accueil -->
-            <p>
-                <a href="index.html" class="underline font-medium hover:opacity-80 absolute top-4 left-6 bg-blue-800 border border-blue-950 text-white px-4 py-1.5 rounded-lg text-sm hover:bg-blue-700 transition focus:outline-none focus:ring-2 focus:ring-pink-500">
-                    ← Retour
-                </a>
-            </p>
+            <a href="index.html"
+               class="underline font-medium hover:opacity-80 absolute top-4 left-6 bg-blue-800 border border-blue-950 text-white px-4 py-1.5 rounded-lg text-sm hover:bg-blue-700 transition focus:outline-none focus:ring-2 focus:ring-pink-500"
+               aria-label="Retourner à la page d'accueil">
+
+                ← Retour
+            </a>
 
             <h1 class="text-2xl font-bold mb-4 mt-6 md:mt-0">
                 Photos des conventions
@@ -29,40 +42,52 @@
             <img src="src/DragonBleu98-logoV2.png"
                  alt="Logo DragonBleu98 Cosplay"
                  class="w-[200px] mx-auto rounded-full">
+
+            <!-- Recherche -->
+
+            <div class="mt-6">
+
+                <label for="barreRecherche"
+                       class="block font-semibold mb-2">
+                    Rechercher un cosplay
+                </label>
+
+                <input
+                    type="search"
+                    id="barreRecherche"
+                    placeholder="Exemple : Ranma, Yami, Neko..."
+                    autocomplete="off"
+                    class="w-full md:w-3/4 p-3 rounded-lg border border-gray-500 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-pink-500"
+                >
+
+                <p id="resultatRecherche"
+                   class="mt-2 text-sm"
+                   role="status"
+                   aria-live="polite">
+
+                    Affichage de toutes les photos.
+                </p>
+
+            </div>
+
         </div>
-        
-        <script>
-            // On sélectionne la barre de recherche
-            const inputRecherche = document.getElementById('barreRecherche');
-            
-            if (inputRecherche) {
-                // On récupère TOUTES les images de la galerie d'un coup
-                const toutesLesImages = document.querySelectorAll('.galerie img');
 
-                // On écoute ce que l'utilisateur tape dans la barre
-                inputRecherche.addEventListener('input', (evenement) => {
-                    const texteSaisi = evenement.target.value.toLowerCase();
-
-                    toutesLesImages.forEach(image => {
-                        const idImage = image.id.toLowerCase();
-                        if (idImage.includes(texteSaisi)) {
-                            image.style.display = 'inline-block';
-                        } else {
-                            image.style.display = 'none';
-                        }
-                    });
-                });
-            }
-        </script>
     </header>
 
-    <!-- Galerie Générale -->
-    <main class="max-w-5xl mx-auto px-4">
-        
-        <!-- ANNÉE 2021 -->
-        <section class="mb-12">
 
-            <h2 class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
+    <!-- =====================================
+         GALERIE
+    ====================================== -->
+
+    <main class="max-w-5xl mx-auto px-4">
+
+        <!-- ANNÉE 2021 -->
+
+        <section class="mb-12" aria-labelledby="annee2021">
+
+            <h2 id="annee2021"
+                class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
+
                 Année 2021
             </h2>
 
@@ -70,77 +95,59 @@
                 Made in Asia 2021
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 galerie">
 
-                <img src="/img/cosplay/oc/madeinasia2021neko.jpeg"
-                     alt="Neko à la Made in Asia 2021"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="neko"
-                     onclick="ouvrirModal(this.src, this.alt)">
-                     
-                <img src="/img/cosplay/oc/madeinasia2021neko3.jpeg"
-                     alt="Neko à la Made in Asia 2021"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="neko"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="neko" data-alt="Neko à la Made in Asia 2021" class="photo">
+                    <img src="/img/cosplay/oc/madeinasia2021neko.jpeg" alt="Neko à la Made in Asia 2021" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/oc/madeinasia2021neko4.jpeg"
-                     alt="Neko à la Made in Asia 2021"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="neko"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="neko" data-alt="Neko à la Made in Asia 2021" class="photo">
+                    <img src="/img/cosplay/oc/madeinasia2021neko3.jpeg" alt="Neko à la Made in Asia 2021" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/oc/madeinasia2021neko5.jpeg"
-                     alt="Neko à la Made in Asia 2021"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="neko"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="neko" data-alt="Neko à la Made in Asia 2021" class="photo">
+                    <img src="/img/cosplay/oc/madeinasia2021neko4.jpeg" alt="Neko à la Made in Asia 2021" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/oc/madeinasia2021neko6.jpeg"
-                     alt="Neko à la Made in Asia 2021"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="neko"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="neko" data-alt="Neko à la Made in Asia 2021" class="photo">
+                    <img src="/img/cosplay/oc/madeinasia2021neko5.jpeg" alt="Neko à la Made in Asia 2021" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/oc/madeinasia2021neko7.jpeg"
-                     alt="Neko à la Made in Asia 2021"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="neko"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="neko" data-alt="Neko à la Made in Asia 2021" class="photo">
+                    <img src="/img/cosplay/oc/madeinasia2021neko6.jpeg" alt="Neko à la Made in Asia 2021" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/oc/madeinasia2021neko8.jpeg"
-                     alt="Neko à la Made in Asia 2021"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="neko"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="neko" data-alt="Neko à la Made in Asia 2021" class="photo">
+                    <img src="/img/cosplay/oc/madeinasia2021neko7.jpeg" alt="Neko à la Made in Asia 2021" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/oc/madeinasia2021neko9.jpeg"
-                     alt="Neko à la Made in Asia 2021"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="neko"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="neko" data-alt="Neko à la Made in Asia 2021" class="photo">
+                    <img src="/img/cosplay/oc/madeinasia2021neko8.jpeg" alt="Neko à la Made in Asia 2021" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/oc/madeinasia2021neko10.jpeg"
-                     alt="Neko à la Made in Asia 2021"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="neko"
-                     onclick="ouvrirModal(this.src, this.alt)">
-                     
-                <img src="/img/cosplay/oc/madeinasia2021neko11.jpeg"
-                     alt="Neko à la Made in Asia 2021"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="neko"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="neko" data-alt="Neko à la Made in Asia 2021" class="photo">
+                    <img src="/img/cosplay/oc/madeinasia2021neko9.jpeg" alt="Neko à la Made in Asia 2021" loading="lazy">
+                </button>
+
+                <button type="button" data-cosplay="neko" data-alt="Neko à la Made in Asia 2021" class="photo">
+                    <img src="/img/cosplay/oc/madeinasia2021neko10.jpeg" alt="Neko à la Made in Asia 2021" loading="lazy">
+                </button>
+
+                <button type="button" data-cosplay="neko" data-alt="Neko à la Made in Asia 2021" class="photo">
+                    <img src="/img/cosplay/oc/madeinasia2021neko11.jpeg" alt="Neko à la Made in Asia 2021" loading="lazy">
+                </button>
 
             </div>
-
         </section>
 
 
         <!-- ANNÉE 2022 -->
-        <section class="mb-12">
 
-            <h2 class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
+        <section class="mb-12" aria-labelledby="annee2022">
+
+            <h2 id="annee2022"
+                class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
+
                 Année 2022
             </h2>
 
@@ -148,23 +155,23 @@
                 Comic Con Bruxelles 2022
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 galerie">
 
-                <img src="/img/cosplay/oc/comicconn2022neko.jpeg"
-                     alt="Neko à la Comic Con Bruxelles 2022"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="neko"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="neko" data-alt="Neko à la Comic Con Bruxelles 2022" class="photo">
+                    <img src="/img/cosplay/oc/comicconn2022neko.jpeg" alt="Neko à la Comic Con Bruxelles 2022" loading="lazy">
+                </button>
 
             </div>
-
         </section>
 
 
         <!-- ANNÉE 2023 -->
-        <section class="mb-12">
 
-            <h2 class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
+        <section class="mb-12" aria-labelledby="annee2023">
+
+            <h2 id="annee2023"
+                class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
+
                 Année 2023
             </h2>
 
@@ -172,157 +179,115 @@
                 Sortie Cosplay 2023
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 galerie">
 
-                <img src="/img/cosplay/yamieve/sortiecosplay2023yamis.jpg"
-                     alt="Yami à la sortie cosplay au Rive Gauche de Charleroi en 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="Yami"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="yami" data-alt="Yami à la sortie cosplay au Rive Gauche de Charleroi en 2023" class="photo">
+                    <img src="/img/cosplay/yamieve/sortiecosplay2023yamis.jpg" alt="Yami à la sortie cosplay au Rive Gauche de Charleroi en 2023" loading="lazy">
+                </button>
 
             </div>
-
 
             <h3 class="text-xl font-bold mb-3">
                 Japan Con 2023
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 galerie">
 
-                <img src="/img/cosplay/ranma/japancon2023ranma.jpeg"
-                     alt="Ranma à la Japan Con 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="ranma"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="ranma" data-alt="Ranma à la Japan Con 2023" class="photo">
+                    <img src="/img/cosplay/ranma/japancon2023ranma.jpeg" alt="Ranma à la Japan Con 2023" loading="lazy">
+                </button>
 
             </div>
-
 
             <h3 class="text-xl font-bold mb-3">
                 Made in Asia 2023
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 galerie">
 
-                <img src="/img/cosplay/yamieve/madeinasia2023yami.jpeg"
-                     alt="Yami à la Made in Asia 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="Yami"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="yami" data-alt="Yami à la Made in Asia 2023" class="photo">
+                    <img src="/img/cosplay/yamieve/madeinasia2023yami.jpeg" alt="Yami à la Made in Asia 2023" loading="lazy">
+                </button>
 
             </div>
-
 
             <h3 class="text-xl font-bold mb-3">
                 Japan Pop Show 2023
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 galerie">
 
-                <img src="/img/cosplay/lala/japanpopsholala4.jpg"
-                     alt="Lala à la Japan Pop Show 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="lala"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="lala" data-alt="Lala à la Japan Pop Show 2023" class="photo">
+                    <img src="/img/cosplay/lala/japanpopsholala4.jpg" alt="Lala à la Japan Pop Show 2023" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/lala/japanpopshow2023lala.jpg"
-                     alt="Lala à la Japan Pop Show 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="lala"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="lala" data-alt="Lala à la Japan Pop Show 2023" class="photo">
+                    <img src="/img/cosplay/lala/japanpopshow2023lala.jpg" alt="Lala à la Japan Pop Show 2023" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/lala/japanpopshow2023lala2.jpg"
-                     alt="Lala à la Japan Pop Show 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="lala"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="lala" data-alt="Lala à la Japan Pop Show 2023" class="photo">
+                    <img src="/img/cosplay/lala/japanpopshow2023lala2.jpg" alt="Lala à la Japan Pop Show 2023" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/lala/japanpopshows2023lala2.jpeg"
-                     alt="Lala à la Japan Pop Show 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="lala"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="lala" data-alt="Lala à la Japan Pop Show 2023" class="photo">
+                    <img src="/img/cosplay/lala/japanpopshows2023lala2.jpeg" alt="Lala à la Japan Pop Show 2023" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/lala/japanpopshows2023lala3.jpeg"
-                     alt="Lala à la Japan Pop Show 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="lala"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="lala" data-alt="Lala à la Japan Pop Show 2023" class="photo">
+                    <img src="/img/cosplay/lala/japanpopshows2023lala3.jpeg" alt="Lala à la Japan Pop Show 2023" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/lala/japanpopshows2023lala4.jpeg"
-                     alt="Lala à la Japan Pop Show 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="lala"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="lala" data-alt="Lala à la Japan Pop Show 2023" class="photo">
+                    <img src="/img/cosplay/lala/japanpopshows2023lala4.jpeg" alt="Lala à la Japan Pop Show 2023" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/lala/japanpopshows2023lala5.jpeg"
-                     alt="Lala à la Japan Pop Show 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="lala"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="lala" data-alt="Lala à la Japan Pop Show 2023" class="photo">
+                    <img src="/img/cosplay/lala/japanpopshows2023lala5.jpeg" alt="Lala à la Japan Pop Show 2023" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/lala/japanpopshows2023lala6.jpeg"
-                     alt="Lala à la Japan Pop Show 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="lala"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="lala" data-alt="Lala à la Japan Pop Show 2023" class="photo">
+                    <img src="/img/cosplay/lala/japanpopshows2023lala6.jpeg" alt="Lala à la Japan Pop Show 2023" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/lala/japanpopshows2023lala7.jpeg"
-                     alt="Lala à la Japan Pop Show 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="lala"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="lala" data-alt="Lala à la Japan Pop Show 2023" class="photo">
+                    <img src="/img/cosplay/lala/japanpopshows2023lala7.jpeg" alt="Lala à la Japan Pop Show 2023" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/lala/japanpopshows2023lala8.jpeg"
-                     alt="Lala à la Japan Pop Show 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="lala"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="lala" data-alt="Lala à la Japan Pop Show 2023" class="photo">
+                    <img src="/img/cosplay/lala/japanpopshows2023lala8.jpeg" alt="Lala à la Japan Pop Show 2023" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/lala/japanpopshows2023lala9.jpeg"
-                     alt="Lala à la Japan Pop Show 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="lala"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="lala" data-alt="Lala à la Japan Pop Show 2023" class="photo">
+                    <img src="/img/cosplay/lala/japanpopshows2023lala9.jpeg" alt="Lala à la Japan Pop Show 2023" loading="lazy">
+                </button>
 
             </div>
-
 
             <h3 class="text-xl font-bold mb-3">
                 Comic Con 2023
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 galerie">
 
-                <img src="/img/cosplay/yamieve/japancon2023yami4.jpg"
-                     alt="Yami à la Comic Con 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="Yami"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="yami" data-alt="Yami à la Comic Con 2023" class="photo">
+                    <img src="/img/cosplay/yamieve/japancon2023yami4.jpg" alt="Yami à la Comic Con 2023" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/yamieve/japancon2023yami5.jpg"
-                     alt="Yami à la Comic Con 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="Yami"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="yami" data-alt="Yami à la Comic Con 2023" class="photo">
+                    <img src="/img/cosplay/yamieve/japancon2023yami5.jpg" alt="Yami à la Comic Con 2023" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/yamieve/japoncon2023yami.jpeg"
-                     alt="Yami à la Comic Con 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="Yami"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="yami" data-alt="Yami à la Comic Con 2023" class="photo">
+                    <img src="/img/cosplay/yamieve/japoncon2023yami.jpeg" alt="Yami à la Comic Con 2023" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/yamieve/comiccon2023yami.jpeg"
-                     alt="Yami à la Comic Con 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="Yami"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="yami" data-alt="Yami à la Comic Con 2023" class="photo">
+                    <img src="/img/cosplay/yamieve/comiccon2023yami.jpeg" alt="Yami à la Comic Con 2023" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/yamieve/comiccon2023yami1.jpeg"
-                     alt="Yami à la Comic Con 2023"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="Yami"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="yami" data-alt="Yami à la Comic Con 2023" class="photo">
+                    <img src="/img/cosplay/yamieve/comiccon2023yami1.jpeg" alt="Yami à la Comic Con 2023" loading="lazy">
+                </button>
 
             </div>
 
@@ -330,9 +295,12 @@
 
 
         <!-- ANNÉE 2024 -->
-        <section class="mb-12">
 
-            <h2 class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
+        <section class="mb-12" aria-labelledby="annee2024">
+
+            <h2 id="annee2024"
+                class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
+
                 Année 2024
             </h2>
 
@@ -340,91 +308,71 @@
                 Sortie Cosplay 2024
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 galerie">
 
-                <img src="/img/cosplay/margesimpson/fetedequartier2024marge.jpg"
-                     alt="Marge Simpson à la sortie cosplay 2024"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="marge"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="marge" data-alt="Marge Simpson à la sortie cosplay 2024" class="photo">
+                    <img src="/img/cosplay/margesimpson/fetedequartier2024marge.jpg" alt="Marge Simpson à la sortie cosplay 2024" loading="lazy">
+                </button>
 
             </div>
-
 
             <h3 class="text-xl font-bold mb-3">
                 Disney Fan Day 2024
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 galerie">
 
-                <img src="/img/cosplay/margesimpson/disneyfanday2024marge.jpg"
-                     alt="Marge Simpson au Disney Fan Day 2024"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="marge"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="marge" data-alt="Marge Simpson au Disney Fan Day 2024" class="photo">
+                    <img src="/img/cosplay/margesimpson/disneyfanday2024marge.jpg" alt="Marge Simpson au Disney Fan Day 2024" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/margesimpson/disneyfanday2024marge2.jpg"
-                     alt="Marge Simpson au Disney Fan Day 2024"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="marge"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="marge" data-alt="Marge Simpson au Disney Fan Day 2024" class="photo">
+                    <img src="/img/cosplay/margesimpson/disneyfanday2024marge2.jpg" alt="Marge Simpson au Disney Fan Day 2024" loading="lazy">
+                </button>
 
             </div>
-
 
             <h3 class="text-xl font-bold mb-3">
                 Summer Geek 2024
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 galerie">
 
-                <img src="/img/cosplay/margesimpson/summergeek2024marge.jpg"
-                     alt="Marge Simpson au Summer Geek 2024"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="marge"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="marge" data-alt="Marge Simpson au Summer Geek 2024" class="photo">
+                    <img src="/img/cosplay/margesimpson/summergeek2024marge.jpg" alt="Marge Simpson au Summer Geek 2024" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/margesimpson/summergeek2024marge2.jpg"
-                     alt="Marge Simpson au Summer Geek 2024"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="marge"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="marge" data-alt="Marge Simpson au Summer Geek 2024" class="photo">
+                    <img src="/img/cosplay/margesimpson/summergeek2024marge2.jpg" alt="Marge Simpson au Summer Geek 2024" loading="lazy">
+                </button>
 
             </div>
-
 
             <h3 class="text-xl font-bold mb-3">
                 Made in Asia 2024
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 galerie">
 
-                <img src="/img/cosplay/meloetta/Madeinasia2024meloetta2.jpg"
-                     alt="Meloetta à la Made in Asia 2024"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="meloetta"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="meloetta" data-alt="Meloetta à la Made in Asia 2024" class="photo">
+                    <img src="/img/cosplay/meloetta/Madeinasia2024meloetta2.jpg" alt="Meloetta à la Made in Asia 2024" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/meloetta/madeinasia2024meoetta.jpeg"
-                     alt="Meloetta à la Made in Asia 2024"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="meloetta"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="meloetta" data-alt="Meloetta à la Made in Asia 2024" class="photo">
+                    <img src="/img/cosplay/meloetta/madeinasia2024meoetta.jpeg" alt="Meloetta à la Made in Asia 2024" loading="lazy">
+                </button>
 
             </div>
-
 
             <h3 class="text-xl font-bold mb-3">
                 Manganim 2024
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 galerie">
 
-                <img src="/img/cosplay/oc/sky.jpg"
-                     alt="Sky à Manganim 2024"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="sky"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="sky" data-alt="Sky à Manganim 2024" class="photo">
+                    <img src="/img/cosplay/oc/sky.jpg" alt="Sky à Manganim 2024" loading="lazy">
+                </button>
 
             </div>
 
@@ -432,13 +380,11 @@
                 Winter 2024
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 galerie">
 
-                <img src="/img/cosplay/yamieve/evewinter2024.jpg"
-                     alt="Yami à Winter 2024"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="Yami"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="yami" data-alt="Yami à Winter 2024" class="photo">
+                    <img src="/img/cosplay/yamieve/evewinter2024.jpg" alt="Yami à Winter 2024" loading="lazy">
+                </button>
 
             </div>
 
@@ -446,180 +392,140 @@
 
 
         <!-- ANNÉE 2025 -->
-        <section class="mb-12">
 
-            <h2 class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
+        <section class="mb-12" aria-labelledby="annee2025">
+
+            <h2 id="annee2025"
+                class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
+
                 Année 2025
             </h2>
-
 
             <h3 class="text-xl font-bold mb-3">
                 Sortie 2025
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 galerie">
 
-                <img src="/img/cosplay/james/sortiecosplay2025james.jpg"
-                     alt="James à la sortie cosplay 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="james"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="james" data-alt="James à la sortie cosplay 2025" class="photo">
+                    <img src="/img/cosplay/james/sortiecosplay2025james.jpg" alt="James à la sortie cosplay 2025" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/james/sortiecosplay2025james2.jpg"
-                     alt="James à la sortie cosplay 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="james"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="james" data-alt="James à la sortie cosplay 2025" class="photo">
+                    <img src="/img/cosplay/james/sortiecosplay2025james2.jpg" alt="James à la sortie cosplay 2025" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/james/sortiecosplay2025james3.jpg"
-                     alt="James à la sortie cosplay 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="james"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="james" data-alt="James à la sortie cosplay 2025" class="photo">
+                    <img src="/img/cosplay/james/sortiecosplay2025james3.jpg" alt="James à la sortie cosplay 2025" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/james/sortiecosplay2025james4.jpg"
-                     alt="James à la sortie cosplay 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="james"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="james" data-alt="James à la sortie cosplay 2025" class="photo">
+                    <img src="/img/cosplay/james/sortiecosplay2025james4.jpg" alt="James à la sortie cosplay 2025" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/james/sortiecosplay2025james5.jpg"
-                     alt="James à la sortie cosplay 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="james"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="james" data-alt="James à la sortie cosplay 2025" class="photo">
+                    <img src="/img/cosplay/james/sortiecosplay2025james5.jpg" alt="James à la sortie cosplay 2025" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/james/sortiecosplay2025james6.jpg"
-                     alt="James à la sortie cosplay 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="james"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="james" data-alt="James à la sortie cosplay 2025" class="photo">
+                    <img src="/img/cosplay/james/sortiecosplay2025james6.jpg" alt="James à la sortie cosplay 2025" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/james/sortiecosplay2025james7.jpg"
-                     alt="James à la sortie cosplay 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="james"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="james" data-alt="James à la sortie cosplay 2025" class="photo">
+                    <img src="/img/cosplay/james/sortiecosplay2025james7.jpg" alt="James à la sortie cosplay 2025" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/james/sortiecosplay2025james8.jpg"
-                     alt="James à la sortie cosplay 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="james"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="james" data-alt="James à la sortie cosplay 2025" class="photo">
+                    <img src="/img/cosplay/james/sortiecosplay2025james8.jpg" alt="James à la sortie cosplay 2025" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/james/sortiecosplay2025james11.jpg"
-                     alt="James à la sortie cosplay 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="james"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="james" data-alt="James à la sortie cosplay 2025" class="photo">
+                    <img src="/img/cosplay/james/sortiecosplay2025james11.jpg" alt="James à la sortie cosplay 2025" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/james/sortiecosplay2025james12.jpg"
-                     alt="James à la sortie cosplay 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="james"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="james" data-alt="James à la sortie cosplay 2025" class="photo">
+                    <img src="/img/cosplay/james/sortiecosplay2025james12.jpg" alt="James à la sortie cosplay 2025" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/arale/sortiecosplayarale2025.jpg"
-                     alt="Arale à la sortie cosplay 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="arale"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="arale" data-alt="Arale à la sortie cosplay 2025" class="photo">
+                    <img src="/img/cosplay/arale/sortiecosplayarale2025.jpg" alt="Arale à la sortie cosplay 2025" loading="lazy">
+                </button>
 
             </div>
-
 
             <h3 class="text-xl font-bold mb-3">
                 Convention Otaku 2025
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 galerie">
 
-                <img src="/img/cosplay/james/soigniejames.jpg"
-                     alt="James à la Convention Otaku 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="james"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="james" data-alt="James à la Convention Otaku 2025" class="photo">
+                    <img src="/img/cosplay/james/soigniejames.jpg" alt="James à la Convention Otaku 2025" loading="lazy">
+                </button>
 
             </div>
-
 
             <h3 class="text-xl font-bold mb-3">
                 D-Con 2025
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 galerie">
 
-                <img src="/img/cosplay/ranma/dconranma2025.jpg"
-                     alt="Ranma à la D-Con 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="ranma"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="ranma" data-alt="Ranma à la D-Con 2025" class="photo">
+                    <img src="/img/cosplay/ranma/dconranma2025.jpg" alt="Ranma à la D-Con 2025" loading="lazy">
+                </button>
 
             </div>
-
 
             <h3 class="text-xl font-bold mb-3">
                 Made in Asia 2025
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 galerie">
 
-                <img src="/img/cosplay/train/madeinasiatrain.jpg"
-                     alt="Train à la Made in Asia 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="train"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="train" data-alt="Train à la Made in Asia 2025" class="photo">
+                    <img src="/img/cosplay/train/madeinasiatrain.jpg" alt="Train à la Made in Asia 2025" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/train/madeinasiatrain2.jpg"
-                     alt="Train à la Made in Asia 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="train"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="train" data-alt="Train à la Made in Asia 2025" class="photo">
+                    <img src="/img/cosplay/train/madeinasiatrain2.jpg" alt="Train à la Made in Asia 2025" loading="lazy">
+                </button>
 
             </div>
-
 
             <h3 class="text-xl font-bold mb-3">
                 Disney Fan Day 2025
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 galerie">
 
-                <img src="/img/cosplay/train/disneyfandaytrain.jpg"
-                     alt="Train au Disney Fan Day 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="train"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="train" data-alt="Train au Disney Fan Day 2025" class="photo">
+                    <img src="/img/cosplay/train/disneyfandaytrain.jpg" alt="Train au Disney Fan Day 2025" loading="lazy">
+                </button>
 
             </div>
-
 
             <h3 class="text-xl font-bold mb-3">
                 Japan Day 2025
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 galerie">
 
-                <img src="/img/cosplay/oc/japanday2025neko.jpg"
-                     alt="Neko au Japan Day 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="neko"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="neko" data-alt="Neko au Japan Day 2025" class="photo">
+                    <img src="/img/cosplay/oc/japanday2025neko.jpg" alt="Neko au Japan Day 2025" loading="lazy">
+                </button>
 
             </div>
-
 
             <h3 class="text-xl font-bold mb-3">
                 Summer Geek 2025
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 galerie">
 
-                <img src="/img/cosplay/oc/summergeek2025neko.jpg"
-                     alt="Neko au Summer Geek 2025"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="neko"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="neko" data-alt="Neko au Summer Geek 2025" class="photo">
+                    <img src="/img/cosplay/oc/summergeek2025neko.jpg" alt="Neko au Summer Geek 2025" loading="lazy">
+                </button>
 
             </div>
 
@@ -627,70 +533,56 @@
 
 
         <!-- ANNÉE 2026 -->
-        <section class="mb-12">
 
-            <h2 class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
+        <section class="mb-12" aria-labelledby="annee2026">
+
+            <h2 id="annee2026"
+                class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
+
                 Année 2026
             </h2>
-
 
             <h3 class="text-xl font-bold mb-3">
                 D-Con 2026
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 galerie">
 
-                <img src="/img/cosplay/ranma/dcon2026ranma.jpg"
-                     alt="Ranma à la D-Con 2026"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="ranma"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="ranma" data-alt="Ranma à la D-Con 2026" class="photo">
+                    <img src="/img/cosplay/ranma/dcon2026ranma.jpg" alt="Ranma à la D-Con 2026" loading="lazy">
+                </button>
 
             </div>
-
 
             <h3 class="text-xl font-bold mb-3">
                 Sortie Cosplay 2026
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 galerie">
 
-                <img src="/img/cosplay/ranma/sortiecosplay2026ranma.jpg"
-                     alt="Ranma à la sortie cosplay 2026"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="ranma"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="ranma" data-alt="Ranma à la sortie cosplay 2026" class="photo">
+                    <img src="/img/cosplay/ranma/sortiecosplay2026ranma.jpg" alt="Ranma à la sortie cosplay 2026" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/ranma/sortiecosplay2026ranma2.jpg"
-                     alt="Ranma à la sortie cosplay 2026"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="ranma"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="ranma" data-alt="Ranma à la sortie cosplay 2026" class="photo">
+                    <img src="/img/cosplay/ranma/sortiecosplay2026ranma2.jpg" alt="Ranma à la sortie cosplay 2026" loading="lazy">
+                </button>
 
-                <img src="/img/cosplay/ranma/sortiecosplay2026ranma3.jpeg"
-                     alt="Ranma à la sortie cosplay 2026"
-                     class="w-full h-64 object-cover object-[center_25%] bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="ranma"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="ranma" data-alt="Ranma à la sortie cosplay 2026" class="photo">
+                    <img src="/img/cosplay/ranma/sortiecosplay2026ranma3.jpeg" alt="Ranma à la sortie cosplay 2026" loading="lazy">
+                </button>
 
             </div>
-
-        </section>
-
-
-        <section class="mb-12">
 
             <h3 class="text-xl font-bold mb-3">
                 Japan Con 2026
             </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6 galerie">
 
-                <img src="/img/cosplay/ranma/japancon2023ranma.jpeg"
-                     alt="Ranma à la Japan Con 2026"
-                     class="w-full h-64 object-cover bg-gray-200 rounded cursor-pointer hover:opacity-90 transition"
-                     id="ranma"
-                     onclick="ouvrirModal(this.src, this.alt)">
+                <button type="button" data-cosplay="ranma" data-alt="Ranma à la Japan Con 2026" class="photo">
+                    <img src="/img/cosplay/ranma/japancon2023ranma.jpeg" alt="Ranma à la Japan Con 2026" loading="lazy">
+                </button>
 
             </div>
 
@@ -698,44 +590,297 @@
 
     </main>
 
-    <!-- Modal Plein Écran pour le zoom des images -->
-    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 z-50 hidden flex items-center justify-center p-4 cursor-pointer" onclick="fermerModal()">
-        <div class="relative max-w-4xl max-h-full">
-            <img id="imgModalContent" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl object-contain">
-            <span class="absolute top-2 right-4 text-white text-3xl font-bold cursor-pointer">&times;</span>
-        </div>
-    </div>
 
-    <!-- Script de gestion du zoom de la modale -->
+    <!-- =====================================
+         MODALE PHOTO
+    ====================================== -->
+
+    <dialog id="imageModal"
+            aria-label="Agrandissement de la photo"
+            class="bg-transparent p-0 m-auto max-w-5xl max-h-[95vh] w-full backdrop:bg-black/80">
+
+        <div class="relative bg-gray-950 rounded-lg p-4 flex flex-col items-center gap-4">
+
+            <button type="button"
+                    id="fermerModal"
+                    class="self-end text-white text-3xl font-bold px-3 py-1 rounded hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-500"
+                    aria-label="Fermer la photo agrandie">
+
+                &times;
+            </button>
+
+            <img id="imgModalContent"
+                 src=""
+                 alt=""
+                 class="max-w-full max-h-[75vh] object-contain rounded-lg">
+
+            <div class="flex items-center justify-center gap-6 w-full">
+
+                <button type="button"
+                        id="photoPrecedente"
+                        class="bg-blue-800 text-white px-5 py-3 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-pink-500"
+                        aria-label="Afficher la photo précédente">
+
+                    ← Précédente
+                </button>
+
+                <button type="button"
+                        id="photoSuivante"
+                        class="bg-blue-800 text-white px-5 py-3 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-pink-500"
+                        aria-label="Afficher la photo suivante">
+
+                    Suivante →
+                </button>
+
+            </div>
+
+        </div>
+
+    </dialog>
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer class="font-sans flex flex-col items-center justify-center py-8 mt-12 text-center">
+
+        <p>
+            Copyright 2026 DragonBleu98 Cosplay.
+        </p>
+
+        <p>
+            Tous droits réservés.
+        </p>
+
+        <p class="mt-2">
+            <a href="mention.html"
+               class="underline font-medium hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-pink-500 rounded px-1">
+
+                Mentions légales
+            </a>
+        </p>
+
+    </footer>
+
+
+    <!-- =====================================
+         JAVASCRIPT
+    ====================================== -->
+
     <script>
-        function ouvrirModal(src, alt) {
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('imgModalContent');
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-            modalImg.src = src;
-            modalImg.alt = alt;
+
+        // =====================================
+        // RECHERCHE DES COSPLAYS
+        // =====================================
+
+        const inputRecherche = document.getElementById('barreRecherche');
+        const photos = document.querySelectorAll('.photo');
+        const resultatRecherche = document.getElementById('resultatRecherche');
+
+        function normaliserTexte(texte) {
+
+            return texte
+                .toLowerCase()
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '')
+                .trim();
+
         }
+
+        function rechercherPhotos() {
+
+            const recherche = normaliserTexte(inputRecherche.value);
+
+            let nombrePhotos = 0;
+
+            photos.forEach(photo => {
+
+                const nomCosplay = normaliserTexte(
+                    photo.dataset.cosplay
+                );
+
+                const correspond = nomCosplay.includes(recherche);
+
+                photo.hidden = !correspond;
+
+                if (correspond) {
+                    nombrePhotos++;
+                }
+
+            });
+
+            if (recherche === '') {
+
+                resultatRecherche.textContent =
+                    `Affichage de toutes les photos : ${nombrePhotos} photos.`;
+
+            } else if (nombrePhotos === 0) {
+
+                resultatRecherche.textContent =
+                    'Aucune photo trouvée pour cette recherche.';
+
+            } else {
+
+                resultatRecherche.textContent =
+                    `${nombrePhotos} photo(s) trouvée(s).`;
+
+            }
+
+        }
+
+        inputRecherche.addEventListener('input', rechercherPhotos);
+
+
+        // =====================================
+        // MODALE PHOTO
+        // =====================================
+
+        const modal = document.getElementById('imageModal');
+
+        const modalImg = document.getElementById('imgModalContent');
+
+        const boutonFermer = document.getElementById('fermerModal');
+
+        const boutonPrecedent = document.getElementById('photoPrecedente');
+
+        const boutonSuivant = document.getElementById('photoSuivante');
+
+        let photosVisibles = [];
+
+        let indexPhoto = 0;
+
+
+        function mettreAJourPhotosVisibles() {
+
+            photosVisibles = Array.from(photos).filter(photo => {
+
+                return !photo.hidden;
+
+            });
+
+        }
+
+
+        function afficherPhoto(index) {
+
+            if (photosVisibles.length === 0) {
+                return;
+            }
+
+            // Navigation circulaire
+
+            indexPhoto = (
+                index + photosVisibles.length
+            ) % photosVisibles.length;
+
+            const boutonPhoto = photosVisibles[indexPhoto];
+
+            const image = boutonPhoto.querySelector('img');
+
+            modalImg.src = image.src;
+
+            modalImg.alt = image.alt;
+
+        }
+
+
+        function ouvrirModal(bouton) {
+
+            mettreAJourPhotosVisibles();
+
+            indexPhoto = photosVisibles.indexOf(bouton);
+
+            if (indexPhoto === -1) {
+                return;
+            }
+
+            afficherPhoto(indexPhoto);
+
+            modal.showModal();
+
+        }
+
 
         function fermerModal() {
-            const modal = document.getElementById('imageModal');
-            modal.classList.remove('flex');
-            modal.classList.add('hidden');
+
+            modal.close();
+
         }
+
+
+        // Ouverture des photos
+
+        photos.forEach(photo => {
+
+            photo.addEventListener('click', () => {
+
+                ouvrirModal(photo);
+
+            });
+
+        });
+
+
+        // Fermeture avec le bouton
+
+        boutonFermer.addEventListener('click', fermerModal);
+
+
+        // Navigation précédente
+
+        boutonPrecedent.addEventListener('click', () => {
+
+            afficherPhoto(indexPhoto - 1);
+
+        });
+
+
+        // Navigation suivante
+
+        boutonSuivant.addEventListener('click', () => {
+
+            afficherPhoto(indexPhoto + 1);
+
+        });
+
+
+        // Fermeture en cliquant sur le fond
+
+        modal.addEventListener('click', evenement => {
+
+            if (evenement.target === modal) {
+
+                fermerModal();
+
+            }
+
+        });
+
+
+        // Navigation avec les flèches du clavier
+
+        modal.addEventListener('keydown', evenement => {
+
+            if (evenement.key === 'ArrowLeft') {
+
+                evenement.preventDefault();
+
+                afficherPhoto(indexPhoto - 1);
+
+            }
+
+            if (evenement.key === 'ArrowRight') {
+
+                evenement.preventDefault();
+
+                afficherPhoto(indexPhoto + 1);
+
+            }
+
+        });
+
     </script>
+
 </body>
-
- <footer class="font-sans flex flex-col items-center justify-center min-h-screen">
-    <p>Copyright 2026 DragonBleu98 Cosplay. <br>
-        Tous droits réservés.</p>
-    <p> <a href="mention.html">Mention légales</a></p>
-  </footer>
 </html>
-
-
-
-
-
-
-
-```

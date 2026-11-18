@@ -13,20 +13,41 @@
 
     <!-- Open Graph -->
     <meta property="og:title" content="DragonBleu98 - Cosplayeuse Passionnée | Créations et Univers Geek" />
-    <meta property="og:description" content="Suivez DragonBleu98 pour découvrir ses cosplay, créations et son univers geek. Retrouvez-la sur Instagram, TikTok, et plus !" />
+    <meta property="og:description" content="Suivez DragonBleu98 pour découvrir ses cosplays, créations et son univers geek. Retrouvez-la sur Instagram, TikTok, et plus !" />
     <meta property="og:url" content="https://dragonbleu98cosplay.vercel.app/" />
     <meta property="og:type" content="website" />
   </head>
 
-  <body class="bg-blue-100 font-sans flex flex-col items-center justify-between min-h-screen py-6 px-4">
-    
-    <!-- Main Content -->
-    <main class="w-full md:w-1/2 bg-gray-300 rounded-3xl py-8 px-6 text-center shadow-xl my-auto">
+  <body class="bg-blue-100 font-sans flex flex-col items-center justify-center min-h-screen">
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = {
+          tiktok: "https://www.tiktok.com/@dragonbleu98",
+          instagram: "https://www.instagram.com/dragonbleu98/",
+          facebook: "https://www.facebook.com/share/1AACPAN1oc/",
+          Thead: "https://www.threads.net/@dragonbleu98",
+          youtube: "https://www.youtube.com/@DragonBleu98",
+          galerie: "galery.html",
+          video: "videos.html"
+        };
+
+        for (const id in links) {
+          const el = document.getElementById(id);
+          if (el) {
+            el.addEventListener("click", () => {
+              window.open(links[id], "_blank");
+            });
+          }
+        }
+      });
+    </script>
+
+    <main class="relative w-full md:w-1/2 bg-gray-300 rounded-full pt-4 pb-4 px-6 text-center shadow-xl animate-fade-in">
       <section aria-labelledby="titre">
-        <h1 id="titre" class="text-2xl font-bold mb-6">DragonBleu98 Cosplay</h1>
+        <h1 id="titre" class="text-l font-bold mb-4">DragonBleu98 Cosplay</h1>
 
         <!-- Logo -->
-        <div class="mb-6 flex justify-center">
+        <div class="mb-4 flex justify-center">
           <img src="src/DragonBleu98-logoV2.png" alt="Logo de DragonBleu98, cosplayeuse" class="w-[200px] block rounded-full" />
         </div>
 
@@ -69,14 +90,14 @@
 
           <button type="button"
             id="galerie"
-            aria-label="Galerie photos de DragonBleu98"
+            aria-label="Photos — Galerie de DragonBleu98"
             class="w-1/2 bg-black text-white py-3 rounded-lg font-semibold hover:opacity-80 hover:-translate-y-1 transition transform duration-200 focus:outline-none focus:ring-2 focus:ring-pink-500">
             Galerie
           </button>
           
           <button type="button"
             id="video"
-            aria-label="Vidéos de DragonBleu98"
+            aria-label="Vidéos — Vidéos de DragonBleu98"
             class="w-1/2 bg-black text-white py-3 rounded-lg font-semibold hover:opacity-80 hover:-translate-y-1 transition transform duration-200 focus:outline-none focus:ring-2 focus:ring-pink-500">
             Vidéos
           </button>
@@ -84,37 +105,11 @@
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="w-full text-center py-6 mt-auto">
-      <p class="text-sm text-gray-700">Copyright © 2026 DragonBleu98 Cosplay. <br>Tous droits réservés.</p>
-      <p class="mt-2">
-        <a href="mention.html" class="underline font-medium hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-pink-500 rounded px-1 text-sm text-gray-800">Mentions légales</a>
-      </p>
+    <footer class="font-sans flex flex-col items-center justify-center py-8 mt-12">
+      <p>Copyright 2026 DragonBleu98 Cosplay. <br>Tous droits réservés.</p>
+      <p><a href="mention.html" class="underline font-medium hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-pink-500 rounded px-1">Mentions légales</a></p>
     </footer>
 
-    <!-- Scripts -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const links = {
-          tiktok: "https://www.tiktok.com/@dragonbleu98",
-          instagram: "https://www.instagram.com/dragonbleu98/",
-          facebook: "https://www.facebook.com/share/1AACPAN1oc/",
-          Thead: "https://www.threads.net/@dragonbleu98",
-          youtube: "https://www.youtube.com/@DragonBleu98",
-          galerie: "galery.html",
-          video: "videos.html"
-        };
-
-        for (const id in links) {
-          const el = document.getElementById(id);
-          if (el) {
-            el.addEventListener("click", () => {
-              window.open(links[id], "_blank");
-            });
-          }
-        }
-      });
-    </script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

@@ -1,184 +1,257 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/Dragonbleu98Cosplay/src/img/logo2.2.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Vidéos des concours et prestations cosplay en convention de DragonBleu98." />
-    <title>DragonBleu98 - Vidéos Conventions</title>
-    <link href="src/index.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Retrouvez les vidéos des concours et conventions cosplay de DragonBleu98.">
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="/Dragonbleu98Cosplay/src/img/logo2.2.png">
+
+    <link rel="stylesheet" href="/src/index.css">
+
+    <title>DragonBleu98 - Vidéos des conventions</title>
 </head>
 
-<body class="bg-blue-100 font-sans min-h-screen flex flex-col justify-between pb-10">
+<body class="bg-blue-100 font-sans min-h-screen flex flex-col">
 
-    <div>
-        <!-- Header -->
-        <header class="flex flex-col items-center py-10 px-4">
-            <div class="w-full md:w-1/2 bg-gray-300 rounded-2xl md:rounded-full p-6 text-center shadow-xl relative">
+    <!-- En-tête -->
+    <header class="flex flex-col items-center py-10 px-4">
 
-                <!-- Bouton Retour à l'accueil -->
-                <a href="index.html"
-                   aria-label="Retour à l'accueil"
-                   class="absolute top-4 left-6 bg-blue-800 border border-blue-950 text-white px-4 py-1.5 rounded-lg text-sm font-semibold hover:bg-blue-700 transition focus:outline-none focus:ring-2 focus:ring-pink-500">
-                    ← Retour
+        <div class="w-full md:w-1/2 bg-gray-300 rounded-2xl md:rounded-full p-6 text-center shadow-xl">
+
+            <p class="text-left">
+                <a
+                    href="index.html"
+                    class="inline-block underline font-medium bg-blue-800 border border-blue-950 text-white hover:bg-blue-700 transition rounded px-3 py-2 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-500"
+                >
+                    Retour à l'accueil
                 </a>
-                
-                <h1 class="text-2xl font-bold mb-4 mt-8 md:mt-0">
-                    Vidéos concours catwalk cosplay
-                </h1>
+            </p>
 
-                <img src="src/DragonBleu98-logoV2.png"
-                     alt="Logo DragonBleu98 Cosplay"
-                     class="w-[200px] mx-auto rounded-full">
+            <h1 class="text-2xl font-bold my-6">
+                Vidéos des concours catwalk cosplay
+            </h1>
+
+            <img
+                src="/src/DragonBleu98-logoV2.png"
+                alt="Logo DragonBleu98 Cosplay"
+                class="w-[200px] mx-auto rounded-full"
+            >
+
+        </div>
+
+    </header>
+
+
+    <!-- Contenu principal -->
+    <main class="w-full max-w-5xl mx-auto px-4 flex-grow">
+
+        <!-- ANNÉE 2023 -->
+        <section class="mb-12" aria-labelledby="annee-2023">
+
+            <h2
+                id="annee-2023"
+                class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2"
+            >
+                Année 2023
+            </h2>
+
+            <h3 class="text-xl font-bold mb-3">
+                Japan Pop Show
+            </h3>
+
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+
+                <video
+                    controls
+                    preload="metadata"
+                    playsinline
+                    aria-label="Vidéo du concours cosplay Lala au Japan Pop Show 2023"
+                    class="w-full rounded-lg focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-500"
+                >
+                    <source src="/src/videos/japanpopshow2023lala.mp4" type="video/mp4">
+                    Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+
             </div>
-        </header>
 
-        <!-- Galerie Vidéos -->
-        <main class="max-w-5xl mx-auto px-4">
-            <!-- <input type="text" id="barreRecherche" placeholder="Rechercher une vidéo par ID..."> -->
-            
-            <!-- ANNÉE 2023 -->
-            <section class="mb-12">
-                <h2 class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
-                    Année 2023
-                </h2>
 
-                <h3 class="text-xl font-bold mb-3">
-                    Japan Pop Show
-                </h3>
+            <h3 class="text-xl font-bold mb-3">
+                Geeknation
+            </h3>
 
-                <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-                    <video src="/src/videos/japanpopshow2023lala.mp4"
-                           controls
-                           preload="metadata"
-                           class="w-full rounded-lg">
-                    </video>
-                </div>
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
 
-                <h3 class="text-xl font-bold mb-3">
-                    Geeknation
-                </h3>
+                <video
+                    controls
+                    preload="metadata"
+                    playsinline
+                    aria-label="Première vidéo du concours cosplay Ranma à Geeknation 2023"
+                    class="w-full rounded-lg focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-500"
+                >
+                    <source src="/src/videos/geeknation2023ranma.mp4" type="video/mp4">
+                    Votre navigateur ne peut pas lire cette vidéo.
+                </video>
 
-                <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-                    <video src="/src/videos/geeknation2023ranma.mp4"
-                           controls
-                           preload="metadata"
-                           class="w-full rounded-lg">
-                    </video>
-                    <video src="/src/videos/geeknation2023ranma2.mp4"
-                           controls
-                           preload="metadata"
-                           class="w-full rounded-lg">
-                    </video>
-                </div>
-            </section>
+                <video
+                    controls
+                    preload="metadata"
+                    playsinline
+                    aria-label="Deuxième vidéo du concours cosplay Ranma à Geeknation 2023"
+                    class="w-full rounded-lg focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-500"
+                >
+                    <source src="/src/videos/geeknation2023ranma2.mp4" type="video/mp4">
+                    Votre navigateur ne peut pas lire cette vidéo.
+                </video>
 
-            <!-- ANNÉE 2025 -->
-            <section class="mb-12">
-                <h2 class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
-                    Année 2025
-                </h2>
+            </div>
 
-                <h3 class="text-xl font-bold mb-3">
-                    Winter 2025
-                </h3>
+        </section>
 
-                <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-                    <video src="/src/videos/concouwrinter2025james.mp4"
-                           controls
-                           preload="metadata"
-                           class="w-full rounded-lg">
-                    </video>
-                </div>
-            </section>
 
-            <!-- ANNÉE 2026 -->
-            <section class="mb-12">
-                <h2 class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
-                    Année 2026
-                </h2>
+        <!-- ANNÉE 2025 -->
+        <section class="mb-12" aria-labelledby="annee-2025">
 
-                <h3 class="text-xl font-bold mb-3">
-                    D-Con 2026
-                </h3>
+            <h2
+                id="annee-2025"
+                class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2"
+            >
+                Année 2025
+            </h2>
 
-                <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-                    <div class="flex flex-col gap-2">
-                        <video src="/src/videos/concourdcon2026ranma.mp4"
-                               controls
-                               preload="metadata"
-                               class="w-full rounded-lg">
-                        </video>
-                        <p class="text-sm text-gray-600 italic">
-                            Désolée pour la partie de la vidéo dans le mauvais sens.
-                        </p>
-                    </div>
-                </div>
-                
-                <h3 class="text-xl font-bold mb-3">
-                    Mangames Day 2026
-                </h3>
+            <h3 class="text-xl font-bold mb-3">
+                Winter 2025
+            </h3>
 
-                <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-                    <video src="/src/videos/2026-08-17-184059283.mp4"
-                           controls
-                           preload="metadata"
-                           class="w-full rounded-lg">
-                    </video>     
-                </div>
-            </section>
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
 
-            <!-- AUTRES -->
-            <section class="mb-12">
-                <h3 class="text-xl font-bold mb-3">
-                    Autres
-                </h3>
+                <video
+                    controls
+                    preload="metadata"
+                    playsinline
+                    aria-label="Vidéo du concours cosplay James à Winter 2025"
+                    class="w-full rounded-lg focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-500"
+                >
+                    <source src="/src/videos/concouwrinter2025james.mp4" type="video/mp4">
+                    Votre navigateur ne peut pas lire cette vidéo.
+                </video>
 
-                <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-                    <video src="/src/videos/fvM7wyA7.mp4"
-                           controls
-                           preload="metadata"
-                           class="w-full rounded-lg">
-                    </video>
-                </div>
-            </section>
+            </div>
 
-        </main>
-    </div>
+        </section>
 
-    <!-- Footer bien placé à l'intérieur du body -->
-    <footer class="w-full text-center py-6 mt-8">
-        <p class="text-sm text-gray-700">
-            Copyright © 2026 DragonBleu98 Cosplay. <br>
+
+        <!-- ANNÉE 2026 -->
+        <section class="mb-12" aria-labelledby="annee-2026">
+
+            <h2
+                id="annee-2026"
+                class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2"
+            >
+                Année 2026
+            </h2>
+
+            <h3 class="text-xl font-bold mb-3">
+                D-Con 2026
+            </h3>
+
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+
+                <video
+                    controls
+                    preload="metadata"
+                    playsinline
+                    aria-label="Vidéo du concours cosplay Ranma à D-Con 2026"
+                    class="w-full rounded-lg focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-500"
+                >
+                    <source src="/src/videos/concourdcon2026ranma.mp4" type="video/mp4">
+                    Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+
+                <p class="text-gray-700 text-sm">
+                    Désolée pour la partie de la vidéo qui est dans le mauvais sens.
+                </p>
+
+            </div>
+
+
+            <h3 class="text-xl font-bold mb-3">
+                Mangames Day 2026
+            </h3>
+
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+
+                <video
+                    controls
+                    preload="metadata"
+                    playsinline
+                    aria-label="Vidéo de Mangames Day 2026"
+                    class="w-full rounded-lg focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-500"
+                >
+                    <source src="/src/videos/2026-08-17-184059283.mp4" type="video/mp4">
+                    Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+
+            </div>
+
+        </section>
+
+
+        <!-- AUTRES VIDÉOS -->
+        <section class="mb-12" aria-labelledby="autres-videos">
+
+            <h2
+                id="autres-videos"
+                class="text-2xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2"
+            >
+                Autres vidéos
+            </h2>
+
+            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+
+                <video
+                    controls
+                    preload="metadata"
+                    playsinline
+                    aria-label="Autre vidéo cosplay DragonBleu98"
+                    class="w-full rounded-lg focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-pink-500"
+                >
+                    <source src="/src/videos/fvM7wyA7.mp4" type="video/mp4">
+                    Votre navigateur ne peut pas lire cette vidéo.
+                </video>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Pied de page -->
+    <footer class="text-center py-8 px-4 mt-8 bg-blue-200">
+
+        <p>
+            Copyright 2026 DragonBleu98 Cosplay.
             Tous droits réservés.
         </p>
+
         <p class="mt-2">
-            <a href="mention.html" class="underline font-medium hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-pink-500 rounded px-1 text-sm text-gray-800">
+            <a
+                href="mention.html"
+                class="underline hover:text-blue-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink-500"
+            >
                 Mentions légales
             </a>
         </p>
+
     </footer>
-
-    <script>
-        const inputRecherche = document.getElementById('barreRecherche');
-        if (inputRecherche) {
-            const toutesLesVideos = document.querySelectorAll('main video');
-
-            inputRecherche.addEventListener('input', (evenement) => {
-                const texteSaisi = evenement.target.value.toLowerCase();
-
-                toutesLesVideos.forEach(video => {
-                    const idVideo = video.id.toLowerCase();
-                    if (idVideo.includes(texteSaisi)) {
-                        video.style.display = 'inline-block';
-                    } else {
-                        video.style.display = 'none';
-                    }
-                });
-            });
-        }
-    </script>
-    <script type="module" src="/src/galery.js"></script>
 
 </body>
 </html>
