@@ -4,187 +4,181 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/Dragonbleu98Cosplay/src/img/logo2.2.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Galerie photos des conventions cosplay de DragonBleu98." />
+    <meta name="description" content="Vidéos des concours et prestations cosplay en convention de DragonBleu98." />
     <title>DragonBleu98 - Vidéos Conventions</title>
+    <link href="src/index.css" rel="stylesheet" />
 </head>
 
-<body class="bg-blue-100 font-sans min-h-screen pb-10">
+<body class="bg-blue-100 font-sans min-h-screen flex flex-col justify-between pb-10">
 
-    <!-- Header -->
-    <header class="flex flex-col items-center py-10 px-4">
-        <div class="w-full md:w-1/2 bg-gray-300 rounded-2xl md:rounded-full p-6 text-center shadow-xl relative">
+    <div>
+        <!-- Header -->
+        <header class="flex flex-col items-center py-10 px-4">
+            <div class="w-full md:w-1/2 bg-gray-300 rounded-2xl md:rounded-full p-6 text-center shadow-xl relative">
 
-            <!-- Bouton Retour à l'accueil -->
-            <a href="index.html"
-               class="absolute top-4 left-6 bg-blue-800 border border-blue-950 text-white px-4 py-1.5 rounded-lg text-sm font-semibold hover:bg-blue-700 transition">
-                ← Retour
-            </a>
-            
-            <h1 class="text-2xl font-bold mb-4 mt-6 md:mt-0">
-                vidéos concours catwalk cosplay
-            </h1>
-             <img src="src/DragonBleu98-logoV2.png"
-                 alt="Logo DragonBleu98 Cosplay"
-                 class="w-[200px] mx-auto rounded-full">
-
-            
-        </div>
-        <script>
-  // On sélectionne la barre de recherche
-  const inputRecherche = document.getElementById('barreRecherche');
-  
-  // On récupère TOUTES les images de la galerie d'un coup
-  const toutesLesImages = document.querySelectorAll('.galerie img');
-
-  // On écoute ce que l'utilisateur tape dans la barre
-  inputRecherche.addEventListener('input', (evenement) => {
-    const texteSaisi = evenement.target.value.toLowerCase();
-
-    // On parcourt chaque image présente dans le HTML
-    toutesLesImages.forEach(image => {
-      const idImage = image.id.toLowerCase();
-
-      // Si l'ID de l'image contient le texte tapé, on l'affiche, sinon on la cache
-      if (idImage.includes(texteSaisi)) {
-        image.style.display = 'inline-block'; // Réaffiche l'image
-      } else {
-        image.style.display = 'none'; // Cache l'image
-      }
-    });
-  });
-</script>
-    </header>
-
-    <!-- Galerie Générale -->
-    <main class="max-w-5xl mx-auto px-4">
-        <!-- <input type="text" id="barreRecherche" placeholder="Rechercher une image par ID..."> -->
-        <!-- ANNÉE 2025 -->
-         <section class="mb-12">
-
-            <h2 class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
-                Année 2023
-            </h2>
-            <h3 class="text-xl font-bold mb-3">
-                Japan pop Show
-            </h3>
-
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-                <video src="/src/videos/japanpopshow2023lala.mp4"
-                controls
+                <!-- Bouton Retour à l'accueil -->
+                <a href="index.html"
+                   aria-label="Retour à l'accueil"
+                   class="absolute top-4 left-6 bg-blue-800 border border-blue-950 text-white px-4 py-1.5 rounded-lg text-sm font-semibold hover:bg-blue-700 transition focus:outline-none focus:ring-2 focus:ring-pink-500">
+                    ← Retour
+                </a>
                 
-                class="w-full rounded-lg">
-                </video>
+                <h1 class="text-2xl font-bold mb-4 mt-8 md:mt-0">
+                    Vidéos concours catwalk cosplay
+                </h1>
+
+                <img src="src/DragonBleu98-logoV2.png"
+                     alt="Logo DragonBleu98 Cosplay"
+                     class="w-[200px] mx-auto rounded-full">
             </div>
-            <h3 class="text-xl font-bold mb-3">
-                Geeknation
-            </h3>
+        </header>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-                <video src="/src/videos/geeknation2023ranma.mp4"
-                controls
-                preload="metadata"
-                class="w-full rounded-lg">
-                </video>
-                <video src="/src/videos/geeknation2023ranma2.mp4"
-                controls
-                preload="metadata"
-                class="w-full rounded-lg">
-                </video>
-            </div>
-
-        
-
-        </section>
-        <section class="mb-12">
-
-            <h2 class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
-                Année 2025
-            </h2>
-
-            <h3 class="text-xl font-bold mb-3">
-                 whinter 2025
-            </h3>
-
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-                <video src="/src/videos/concouwrinter2025james.mp4"
-                controls
-                preload="metadata"
-                class="w-full rounded-lg">
-                </video>
-            </div>
-
+        <!-- Galerie Vidéos -->
+        <main class="max-w-5xl mx-auto px-4">
+            <!-- <input type="text" id="barreRecherche" placeholder="Rechercher une vidéo par ID..."> -->
             
+            <!-- ANNÉE 2023 -->
+            <section class="mb-12">
+                <h2 class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
+                    Année 2023
+                </h2>
 
-        </section>
+                <h3 class="text-xl font-bold mb-3">
+                    Japan Pop Show
+                </h3>
 
+                <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+                    <video src="/src/videos/japanpopshow2023lala.mp4"
+                           controls
+                           preload="metadata"
+                           class="w-full rounded-lg">
+                    </video>
+                </div>
 
-        <!-- ANNÉE 2026 -->
-        <section class="mb-12">
+                <h3 class="text-xl font-bold mb-3">
+                    Geeknation
+                </h3>
 
-            <h2 class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
-                Année 2026
-            </h2>
+                <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+                    <video src="/src/videos/geeknation2023ranma.mp4"
+                           controls
+                           preload="metadata"
+                           class="w-full rounded-lg">
+                    </video>
+                    <video src="/src/videos/geeknation2023ranma2.mp4"
+                           controls
+                           preload="metadata"
+                           class="w-full rounded-lg">
+                    </video>
+                </div>
+            </section>
 
-            <h3 class="text-xl font-bold mb-3">
-                D-con 2026
-            </h3>
+            <!-- ANNÉE 2025 -->
+            <section class="mb-12">
+                <h2 class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
+                    Année 2025
+                </h2>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-              
-                <video
-                src="/src/videos/concourdcon2026ranma.mp4"
-                controls
-                preload="metadata"
-                class="w-full rounded-lg">
-                </video>
-            <p>Sorry, pour la partie de la vidéo dans le mauvais sens</p>
+                <h3 class="text-xl font-bold mb-3">
+                    Winter 2025
+                </h3>
 
-            </div>
-            
-             <h3 class="text-xl font-bold mb-3">
-                Mangames day 2026
-            </h3>
+                <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+                    <video src="/src/videos/concouwrinter2025james.mp4"
+                           controls
+                           preload="metadata"
+                           class="w-full rounded-lg">
+                    </video>
+                </div>
+            </section>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+            <!-- ANNÉE 2026 -->
+            <section class="mb-12">
+                <h2 class="text-3xl font-bold text-blue-900 border-b-4 border-blue-300 mb-6 pb-2">
+                    Année 2026
+                </h2>
 
-            <video src="/src/videos/2026-08-17-184059283.mp4"
-                controls
-                preload="metadata"
-                class="w-full rounded-lg"
-            
-            ></video>     
+                <h3 class="text-xl font-bold mb-3">
+                    D-Con 2026
+                </h3>
 
-            </div>
+                <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+                    <div class="flex flex-col gap-2">
+                        <video src="/src/videos/concourdcon2026ranma.mp4"
+                               controls
+                               preload="metadata"
+                               class="w-full rounded-lg">
+                        </video>
+                        <p class="text-sm text-gray-600 italic">
+                            Désolée pour la partie de la vidéo dans le mauvais sens.
+                        </p>
+                    </div>
+                </div>
+                
+                <h3 class="text-xl font-bold mb-3">
+                    Mangames Day 2026
+                </h3>
 
-        </section>
-        <section class="mb-12">
+                <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+                    <video src="/src/videos/2026-08-17-184059283.mp4"
+                           controls
+                           preload="metadata"
+                           class="w-full rounded-lg">
+                    </video>     
+                </div>
+            </section>
 
-            <h3 class="text-xl font-bold mb-3">
-                Autres
-            </h3>
+            <!-- AUTRES -->
+            <section class="mb-12">
+                <h3 class="text-xl font-bold mb-3">
+                    Autres
+                </h3>
 
-            <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-        
-                <video src="/src/videos/fvM7wyA7.mp4"
-                controls
-                preload="metadata"
-                class="w-full rounded-lg">
-                </video>
-            </div>
+                <div class="bg-white p-4 rounded-lg shadow-md grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+                    <video src="/src/videos/fvM7wyA7.mp4"
+                           controls
+                           preload="metadata"
+                           class="w-full rounded-lg">
+                    </video>
+                </div>
+            </section>
 
+        </main>
+    </div>
 
-        </section>
+    <!-- Footer bien placé à l'intérieur du body -->
+    <footer class="w-full text-center py-6 mt-8">
+        <p class="text-sm text-gray-700">
+            Copyright © 2026 DragonBleu98 Cosplay. <br>
+            Tous droits réservés.
+        </p>
+        <p class="mt-2">
+            <a href="mention.html" class="underline font-medium hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-pink-500 rounded px-1 text-sm text-gray-800">
+                Mentions légales
+            </a>
+        </p>
+    </footer>
 
-    </main>
-    
+    <script>
+        const inputRecherche = document.getElementById('barreRecherche');
+        if (inputRecherche) {
+            const toutesLesVideos = document.querySelectorAll('main video');
 
+            inputRecherche.addEventListener('input', (evenement) => {
+                const texteSaisi = evenement.target.value.toLowerCase();
+
+                toutesLesVideos.forEach(video => {
+                    const idVideo = video.id.toLowerCase();
+                    if (idVideo.includes(texteSaisi)) {
+                        video.style.display = 'inline-block';
+                    } else {
+                        video.style.display = 'none';
+                    }
+                });
+            });
+        }
+    </script>
     <script type="module" src="/src/galery.js"></script>
 
 </body>
- <footer class="font-sans flex flex-col items-center justify-center min-h-screen">
-    <p>Copyright 2026 DragonBleu98 Cosplay. <br>
-        Tous droits réservés.</p>
-    <p> <a href="mention.html">Mention légales</a></p>
-  </footer>
 </html>
-```
